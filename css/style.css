@@ -1,0 +1,668 @@
+/* style.css (Revised for Max 100% Width for Content - Final Fix, and Aging History Colors) */
+html, body { /* Apply to html and body for full reset */
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure they take full width */
+    height: 100%; /* Ensure they take full height */
+    box-sizing: border-box; /* Global box-sizing */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #e6eef5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+/* Add this class to the body when the mobile menu is open to prevent background scrolling */
+body.menu-open {
+    overflow-x: hidden; /* Prevent horizontal scroll when menu is open */
+    overflow-y: hidden; /* Prevent vertical scroll on background content */
+}
+
+.container {
+    max-width: 100% !important;
+    margin: 0;
+    padding: 0;
+    background-color: transparent; /* Changed to transparent, body background will show */
+    border-radius: 0;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    flex-grow: 1;
+    /* Remove transition for the container as it no longer wraps the sliding main content */
+    transition: none;
+    /* pointer-events: none; was removed here in the previous step */
+}
+
+
+/* Top Navigation Bar Styling - REMOVED from here, now in header_nav.css */
+/* Centered Navigation Items Container - REMOVED from here, now in header_nav.css */
+/* Navigation Icon Button - REMOVED */
+/* General Nav Link Styling (Home, Profile) - REMOVED */
+/* Search Icon Button Styling - REMOVED */
+
+
+/* Styles for main content area - now starts below the header */
+.main-content { /* Targeting the <main> tag directly */
+    flex-grow: 1;
+    overflow-y: auto; /* Allows scrolling if content overflows */
+    padding: 20px 25px; /* Added general padding for overall margins: top/bottom 20px, left/right 25px */
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+    display: flex; /* Make main-content a flex container */
+    flex-direction: column; /* Stack its children vertically */
+}
+
+
+.main-content-area { /* This class seems redundant or misused, keeping it as is based on existing code */
+    display: flex;
+    width: 100%; /* Explicitly 100% width */
+    flex-grow: 1;
+    background-color: transparent; /* Changed to transparent, body background will show */
+    border-radius: 0; /* No border-radius on this outer container */
+    box-shadow: none; /* No shadow on this outer container */
+    margin: 0; /* No margin here */
+    padding: 0; /* No padding here */
+    /* Removed transition for the slide effect as content will not slide */
+    transition: none;
+    position: relative; /* Needed for z-index to work correctly */
+    /* REMOVED: z-index: -1; This was causing content to be unclickable */
+    /* By removing it, it will default to z-index: auto (or 0), making it clickable */
+}
+
+
+/* Individual tab item container for main tabs, especially those with submenus - REMOVED from here, now in header_nav.css */
+/* Tab Button Styling - REMOVED from here, now in header_nav.css */
+/* Dropdown arrow for submenu items - REMOVED from here, now in header_nav.css */
+/* Submenu Container Styling - REMOVED from here, now in header_nav.css */
+/* Nested Tab Items and Submenus - REMOVED from here, now in header_nav.css */
+
+
+/* Wrapper for tab content to take remaining space */
+.tab-content-wrapper {
+    flex-grow: 1;
+    padding: 0; /* Ensure no padding here */
+    overflow-y: auto;
+    background-color: transparent; /* Added a light background to see its area */
+    border-radius: 0.75rem; /* Match other cards */
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.06); /* Subtle inner shadow */
+}
+
+/* --- Content Display Logic (Crucial Fix - with !important) --- */
+/* Default: All main tab contents are hidden */
+.tab-content {
+    display: none !important;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Only the active main tab content is shown */
+.tab-content.active {
+    display: block !important;
+}
+
+/* Default: All dashboard sections within auditToolMainPage are hidden */
+#auditToolMainPage .dashboard-section {
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+}
+/* Only the active dashboard section within auditToolMainPage is shown by JS */
+#auditToolMainPage .dashboard-section.active-section-display {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Default: All sub-tab contents within sub-tab-content-wrapper are hidden */
+/* This targets wpLrMain inside wpMain */
+.sub-tab-content-wrapper > div {
+    display: none !important;
+}
+/* Only the active sub-tab content is shown by JS */
+/* Corrected selector from .sub-tab-wrapper to .sub-tab-content-wrapper */
+.sub-tab-content-wrapper > div.active-sub-tab-display {
+    display: block !important;
+}
+
+
+/* Consolidated Dashboard Sections */
+.dashboard-section {
+    background-color: #ffffff; /* White background for the content cards */
+    border-radius: 0.75rem; /* Re-added rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Re-added shadow */
+    padding: 2rem; /* Keep internal padding for content within sections */
+    margin: 0; /* MODIFIED: Set margin to 0 to remove outer spacing */
+    border: 1px solid #e2e8f0; /* Re-added border */
+}
+
+/* These specific margin rules are now redundant but can be kept if they are to override
+   other styles later, though with 'margin: 0;' above, they won't have an effect.
+   Keeping them as '0' ensures no unexpected spacing. */
+.dashboard-section:first-child {
+    margin-top: 0; /* Set to 0 for consistency */
+}
+
+.dashboard-section:last-child {
+    margin-bottom: 0; /* Set to 0 for consistency */
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.dashboard-section.active-section {
+    border-color: #4f46e5; /* Re-added active border color */
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.2); /* Re-added active shadow */
+}
+
+
+/* Dashboard Grid Layout (within cards, or can be used directly in sections) */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+    padding-right: 0;
+}
+
+@media (max-width: 1024px) {
+    .dashboard-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Dashboard Card Styling */
+.dashboard-card {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem 2rem;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Card Spanning */
+.card-span-1 {
+    grid-column: span 1;
+}
+.card-span-2 {
+    grid-column: span 2;
+}
+.card-span-full {
+    grid-column: 1 / -1;
+}
+
+/* Form Input Styling */
+.input-group {
+    margin-bottom: 0;
+    flex-shrink: 0;
+    min-width: 180px;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+.text-input-field,
+.select-field {
+    width: 100%;
+    padding: 0.85rem 1.2rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: #334155;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.04);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fdfdfd;
+}
+
+/* Add this rule to hide the native file input */
+.file-input {
+    display: none;
+}
+
+/* Specific styling for select fields to maintain custom arrow */
+.select-field {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+}
+
+/* NEW RULE: Remove the background-image (arrow) specifically for the glDosBranch input (retained from previous) */
+#glDosBranch {
+    background-image: none;
+    padding-right: 1rem;
+}
+
+.text-input-field:focus,
+.select-field:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.25);
+}
+
+/* Process Button Styling */
+.process-button {
+    background-color: #10b981;
+    color: white;
+    padding: 0.9rem 2rem;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(16, 185, 129, 0.25);
+    border: none;
+    cursor: pointer;
+    font-size: 1.05rem;
+}
+.process-button:hover {
+    background-color: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+}
+.process-button:active {
+    transform: translateY(0);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.process-button:disabled {
+    background-color: #a0aec0;
+    color: #cbd5e1;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Custom File Button Styling */
+.custom-file-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    background-color: #4f46e5;
+    color: white;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.25);
+    font-size: 0.95rem;
+}
+.custom-file-button:hover {
+    background-color: #4338ca;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.35);
+}
+.custom-file-button:active {
+    transform: translateY(0);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* File Display Styling */
+.file-display {
+    margin-top: 0.75rem;
+    padding: 0.75rem 1rem;
+    background-color: #f0f4f8;
+    border: 1px dashed #c7d2fe;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    color: #374151;
+    word-break: break-all;
+    min-height: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.file-display .file-entry {
+    background-color: #e2e8f0;
+    border-radius: 0.3rem;
+    padding: 0.4rem 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.file-display .file-entry span {
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 0.5rem;
+}
+.file-display .file-entry button {
+    flex-shrink: 0;
+    line-height: 1;
+    padding: 0 0.3rem;
+}
+
+/* Message Div Styling */
+#message {
+    padding: 1.5rem 2rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    text-align: center;
+    max-width: 600px;
+    min-width: 300px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Ensure it's on top of almost everything */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+}
+
+.message-success {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #34d399;
+}
+.message-error {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #ef4444;
+}
+.message-info {
+    background-color: #e0f2fe;
+    color: #0c4a6e;
+    border: 1px solid #60a5fa;
+}
+.message-loading {
+    background-color: #fef3c7;
+    color: #92400e;
+    border: 1px solid #fbbf24;
+}
+
+/* Ensure message is visible when active */
+#message.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* General improvements to headers and text within tab-content */
+.tab-content h2 {
+    color: #1e293b;
+}
+.tab-content p.text-lg {
+    color: #475569;
+}
+
+/* NEW: Summary Tiles Styling */
+.summary-tile {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid; /* Border color defined by utility classes */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Ensure text inside is centered */
+    min-height: 120px; /* Ensure consistent height */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.summary-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.summary-tile .tile-label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: inherit; /* Inherit color from parent tile */
+    opacity: 0.85;
+}
+
+.summary-tile .tile-value {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: inherit; /* Inherit color from parent tile */
+}
+
+/* Responsive adjustments for tiles */
+@media (max-width: 768px) {
+    .summary-tile {
+        min-height: 100px;
+        padding: 1rem;
+    }
+    .summary-tile .tile-label {
+        font-size: 0.9rem;
+    }
+    .summary-tile .tile-value {
+        font-size: 1.5rem;
+    }
+}
+
+/* NEW: Aging History Table Cell Coloring */
+.aging-0 { background-color: #d1fae5; } /* Green - NOT YET DUE */
+.aging-1 { background-color: #a7f3d0; } /* Lighter Green - 1-30 DAYS */
+.aging-2 { background-color: #fef3c7; } /* Light Yellow - 31-60 */
+.aging-3 { background-color: #fde68a; } /* Yellow - 61-90 */
+.aging-4 { background-color: #fcd34d; } /* Darker Yellow - 91-120 */
+.aging-5 { background-color: #fed7aa; } /* Light Orange - 121-180 */
+.aging-6 { background-color: #fdba74; } /* Orange - 181-365 */
+.aging-7 { background-color: #fca5a5; } /* Red - OVER 365 */
+
+/* NEW: Specific styles for Operations Aging Report table */
+#agingReportTableContainer {
+    max-height: 70vh; /* Increased height for better viewing */
+    overflow: auto; /* Enable scrolling for both x and y */
+    position: relative; /* Needed for sticky children */
+    border-radius: 0.75rem; /* Match card styling */
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.06); /* Subtle inner shadow */
+}
+
+#agingHistoryTable { /* Target the table itself */
+    width: 100%; /* Ensure table takes full width of its container */
+    border-collapse: separate; /* Required for sticky positioning to work well */
+    border-spacing: 0; /* Remove default spacing for collapse look */
+}
+
+#agingHistoryTable th,
+#agingHistoryTable td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0; /* Add right border for column separation */
+    white-space: nowrap; /* Prevent text wrapping in cells */
+}
+
+#agingHistoryTable th:last-child,
+#agingHistoryTable td:last-child {
+    border-right: none; /* No border on the last column */
+}
+
+#agingHistoryTable thead th {
+    background-color: #f8fafc;
+    position: sticky;
+    top: 0; /* Stick to the top of the container */
+    z-index: 2; /* Ensure header is above scrolling body content */
+    text-align: center; /* Center month headers */
+}
+
+/* Sticky column styles */
+#agingHistoryTable .sticky-col {
+    position: sticky;
+    left: 0;
+    background-color: #ffffff; /* Ensure background is solid when sticky */
+    z-index: 3; /* Higher than header to be on top when both sticky */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05); /* Subtle shadow for sticky effect */
+    text-align: left; /* Ensure account name is left aligned */
+    min-width: 100px; /* Approximate width for ACCOUNT */
+}
+
+/* New sticky column styles for DISBURSED, PRINCIPAL, BALANCE, PRODUCT */
+#agingHistoryTable .sticky-col-2 {
+    position: sticky;
+    left: 100px; /* Width of sticky-col */
+    background-color: #ffffff;
+    z-index: 3;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    text-align: left;
+    min-width: 100px; /* Approximate width for DISBURSED */
+}
+
+#agingHistoryTable .sticky-col-3 {
+    position: sticky;
+    left: 200px; /* Width of sticky-col + sticky-col-2 */
+    background-color: #ffffff;
+    z-index: 3;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    text-align: right; /* Principal is right-aligned */
+    min-width: 150px; /* Approximate width for PRINCIPAL */
+}
+
+#agingHistoryTable .sticky-col-4 {
+    position: sticky;
+    left: 350px; /* Width of sticky-col + sticky-col-2 + sticky-col-3 */
+    background-color: #ffffff;
+    z-index: 3;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    text-align: right; /* Balance is right-aligned */
+    min-width: 150px; /* Approximate width for BALANCE */
+}
+
+#agingHistoryTable .sticky-col-5 {
+    position: sticky;
+    left: 500px; /* Width of sticky-col + sticky-col-2 + sticky-col-3 + sticky-col-4 */
+    background-color: #ffffff;
+    z-index: 3;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    text-align: left;
+    min-width: 150px; /* Approximate width for PRODUCT */
+}
+
+
+/* Ensure sticky column's header is also sticky */
+#agingHistoryTable thead .sticky-col,
+#agingHistoryTable thead .sticky-col-2,
+#agingHistoryTable thead .sticky-col-3,
+#agingHistoryTable thead .sticky-col-4,
+#agingHistoryTable thead .sticky-col-5 {
+    z-index: 4; /* Even higher for the corner element (sticky header + sticky column) */
+}
+
+/* Specific alignment for headers of new sticky columns */
+#agingHistoryTable thead .sticky-col {
+    text-align: left; /* Ensure ACCOUNT header is left aligned */
+}
+#agingHistoryTable thead .sticky-col-2 {
+    text-align: left; /* Ensure DISBURSED header is left aligned */
+}
+#agingHistoryTable thead .sticky-col-3 {
+    text-align: right; /* Ensure PRINCIPAL header is right aligned */
+}
+#agingHistoryTable thead .sticky-col-4 {
+    text-align: right; /* Ensure BALANCE header is right aligned */
+}
+#agingHistoryTable thead .sticky-col-5 {
+    text-align: left; /* Ensure PRODUCT header is left aligned */
+}
+
+
+/* Style for month headers (Jan, Feb, etc.) */
+#agingHistoryTable thead tr:last-child th {
+    text-align: center;
+}
+
+/* Style for aging values */
+#agingHistoryTable tbody td[class*="aging-"] {
+    font-weight: 600;
+}
+
+/* NEW: Fixed height wrapper for tables with scroll */
+.table-scroll-wrapper {
+    max-height: 800px; /* Set the maximum height */
+    overflow-y: auto;   /* Enable vertical scrolling */
+    border: 1px solid #e2e8f0; /* Optional: add a border to show the scrollable area */
+    border-radius: 0.75rem; /* Match card styling */
+    margin-top: 1rem; /* Add some space above the wrapper */
+}
+
+/* MODAL OVERLAY STYLES - CRITICAL FOR Z-INDEX */
+/* The modals are already set to fixed, inset-0, bg-opacity-50 in their PHP files. */
+/* We just need to ensure the z-index is super high. */
+#maturityModal,
+#interestModal,
+#newLoansDetailsModal { /* Apply to all modals */
+    z-index: 9999 !important; /* Ensure modals are on top of everything */
+}
+
+/* Global Footer Styling */
+.app-footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #f0f2f5; /* Match body background for seamless look */
+    color: #6b7280; /* Gray text for copyright */
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: auto; /* Pushes the footer to the bottom in a flex column layout */
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.05); /* Subtle shadow at the top of the footer */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Styling for the main content area to ensure fixed margins */
+.content-area {
+    /* Ensures the content area itself pushes content off the edges */
+    padding: 20px 25px; /* Fixed padding on left and right, and top/bottom */
+    max-width: 1300px; /* Optional: Set a maximum width for content on very large screens */
+    margin-left: auto; /* Center the content if max-width is applied */
+    margin-right: auto; /* Center the content if max-width is applied */
+    box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 100%) {
+    .content-area {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}

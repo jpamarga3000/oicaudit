@@ -1,0 +1,193 @@
+/* audit_tool/css/operations_dc.css */
+
+/* Define CSS Variables for Column Widths for better sticky positioning */
+/* These values are approximate and might need fine-tuning based on actual data content. */
+:root {
+    /* Member-Borrowers Table */
+    --mb-name-col-width: 150px;
+    --mb-cid-col-width: 80px;
+
+    /* Details Table */
+    --details-name-col-width: 150px;
+    --details-cid-col-width: 80px;
+    --details-account-col-width: 120px;
+
+    /* Deposit Requirements Table (new) */
+    --dc-req-product-col-width: 180px;
+    --dc-req-condition-col-width: 150px;
+    --dc-req-details-col-min-width: 180px; /* Minimum width for details column to allow wrapping */
+}
+
+
+/* General sticky column styles for tables within this tab */
+/* Ensure the table has border-collapse: separate; and border-spacing: 0; */
+/* And the container has overflow-x: auto; */
+
+/* Member-Borrowers Table Sticky Columns */
+/* Make the entire THEAD sticky for vertical scrolling */
+#memberBorrowersReportTableContainer table thead {
+    position: sticky;
+    top: 0; /* Sticks to the top of its scrollable container */
+    z-index: 3; /* Ensures it's above scrolling tbody content */
+    background-color: #f8fafc; /* Background to prevent content showing through */
+    box-shadow: 0 2px 2px -1px rgba(0,0,0,0.1); /* Subtle shadow for visual separation */
+}
+
+/* Sticky header cells (for horizontal scrolling) */
+#memberBorrowersReportTableContainer table th.sticky-col-mb-1,
+#memberBorrowersReportTableContainer table th.sticky-col-mb-2 {
+    position: sticky;
+    z-index: 4; /* Higher than thead's z-index so they appear above other sticky headers when scrolling horizontally */
+    background-color: #f8fafc; /* Ensure background is solid */
+    box-shadow: 2px 0 3px rgba(0,0,0,0.05); /* Subtle shadow for the sticky edge */
+}
+
+/* Sticky data cells (for horizontal scrolling) */
+#memberBorrowersReportTableContainer table td.sticky-col-mb-1,
+#memberBorrowersReportTableContainer table td.sticky-col-mb-2 {
+    position: sticky;
+    z-index: 2; /* Lower than headers, but above regular scrolling cells */
+    background-color: #ffffff; /* Ensure background is solid */
+    box-shadow: 2px 0 3px rgba(0,0,0,0.05); /* Subtle shadow for the sticky edge */
+}
+
+/* Specific left offsets for Member-Borrowers columns */
+#memberBorrowersReportTableContainer table th.sticky-col-mb-1,
+#memberBorrowersReportTableContainer table td.sticky-col-mb-1 { /* NAME */
+    left: 0;
+}
+
+#memberBorrowersReportTableContainer table th.sticky-col-mb-2,
+#memberBorrowersReportTableContainer table td.sticky-col-mb-2 { /* CID */
+    left: var(--mb-name-col-width); /* Offset by NAME column width */
+}
+
+
+/* Details Table Sticky Columns */
+/* Make the entire THEAD sticky for vertical scrolling */
+#detailsReportTableContainer table thead {
+    position: sticky;
+    top: 0; /* Sticks to the top of its scrollable container */
+    z-index: 3; /* Ensures it's above scrolling tbody content */
+    background-color: #f8fafc; /* Background to prevent content showing through */
+    box-shadow: 0 2px 2px -1px rgba(0,0,0,0.1); /* Subtle shadow for visual separation */
+}
+
+/* Sticky header cells (for horizontal scrolling) */
+#detailsReportTableContainer table th.sticky-col-details-1,
+#detailsReportTableContainer table th.sticky-col-details-2,
+#detailsReportTableContainer table th.sticky-col-details-3 {
+    position: sticky;
+    z-index: 4; /* Higher than thead's z-index */
+    background-color: #f8fafc; /* Ensure background is solid */
+    box-shadow: 2px 0 3px rgba(0,0,0,0.05); /* Subtle shadow */
+}
+
+/* Sticky data cells (for horizontal scrolling) */
+#detailsReportTableContainer table td.sticky-col-details-1,
+#detailsReportTableContainer table td.sticky-col-details-2,
+#detailsReportTableContainer table td.sticky-col-details-3 {
+    position: sticky;
+    z-index: 2; /* Lower than headers, but above regular scrolling cells */
+    background-color: #ffffff; /* Ensure background is solid */
+    box-shadow: 2px 0 3px rgba(0,0,0,0.05); /* Subtle shadow */
+}
+
+/* Specific left offsets for Details columns */
+#detailsReportTableContainer table th.sticky-col-details-1,
+#detailsReportTableContainer table td.sticky-col-details-1 { /* NAME */
+    left: 0;
+}
+
+#detailsReportTableContainer table th.sticky-col-details-2,
+#detailsReportTableContainer table td.sticky-col-details-2 { /* CID */
+    left: var(--details-name-col-width); /* Offset by NAME column width */
+}
+
+#detailsReportTableContainer table th.sticky-col-details-3,
+#detailsReportTableContainer table td.sticky-col-details-3 { /* ACCOUNT */
+    left: calc(var(--details-name-col-width) + var(--details-cid-col-width)); /* Offset by NAME + CID widths */
+}
+
+
+/* Set explicit widths for sticky columns in Details table */
+#detailsReportTableContainer table th:nth-child(1),
+#detailsReportTableContainer table td:nth-child(1) { /* NAME */
+    min-width: var(--details-name-col-width);
+    width: var(--details-name-col-width);
+}
+
+#detailsReportTableContainer table th:nth-child(2),
+#detailsReportTableContainer table td:nth-child(2) { /* CID */
+    min-width: var(--details-cid-col-width);
+    width: var(--details-cid-col-width);
+}
+
+#detailsReportTableContainer table th:nth-child(3),
+#detailsReportTableContainer table td:nth-child(3) { /* ACCOUNT */
+    min-width: var(--details-account-col-width);
+    width: var(--details-account-col-width);
+}
+
+
+/* Collapsible Section Styles (existing) */
+/* Removed collapsible-content styles as the feature is removed */
+
+
+/* NEW: Styles for Deposit Requirements Tables (two columns) */
+#depositRequirementsTablesWrapper {
+    align-items: flex-start; /* Align tables to the top */
+}
+
+#depositRequirementsTableCol1,
+#depositRequirementsTableCol2 {
+    min-height: 200px; /* Minimum height for visual consistency */
+    max-height: 600px; /* Maximum height before scrolling */
+    overflow-y: auto;   /* Enable vertical scrolling */
+    border: 1px dashed #93c5fd; /* Light blue dashed border */
+    background-color: #f0f9ff; /* Light blue background */
+    border-radius: 0.75rem; /* Rounded corners */
+    padding: 1rem; /* Padding inside the scrollable area */
+}
+
+#depositRequirementsTableCol1 table,
+#depositRequirementsTableCol2 table {
+    width: 100%;
+    border-collapse: separate; /* Required for sticky positioning */
+    border-spacing: 0;
+    /* Remove padding and shadow from table directly, apply to container */
+    padding: 0;
+    box-shadow: none;
+}
+
+/* Ensure table headers are sticky within their scrollable column */
+#depositRequirementsTableCol1 thead,
+#depositRequirementsTableCol2 thead {
+    position: sticky;
+    top: 0;
+    z-index: 10; /* Ensure headers are above scrolling content */
+    background-color: #f8fafc; /* Light background for sticky header */
+    box-shadow: 0 2px 2px -1px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Specific styling for the 'DETAILS' column cells */
+.deposit-details-cell {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 0.25rem; /* Small gap between items */
+    flex-wrap: wrap; /* Allow content to wrap if needed */
+    align-items: flex-start; /* Align items to the start of the cross-axis */
+}
+
+.deposit-details-cell .text-input-field,
+.deposit-details-cell .select-field {
+    max-width: 100%; /* Ensure inputs don't overflow parent */
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+    white-space: normal; /* Allow text inside input to wrap */
+}
+
+.deposit-details-cell span {
+    white-space: nowrap; /* Keep text labels on one line */
+    flex-shrink: 0; /* Prevent text labels from shrinking */
+}
+

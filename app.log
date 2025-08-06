@@ -1,0 +1,13 @@
+2025-06-11 15:43:32,243 - app - ERROR - CRITICAL: Failed to import a required module during startup: cannot import name 'convert_dbf_to_csv' from 'backend.convert_dbf' (c:\xampp\htdocs\audit_tool\backend\convert_dbf.py)
+2025-06-11 15:43:43,956 - app - ERROR - CRITICAL: Failed to import a required module during startup: cannot import name 'convert_dbf_to_csv' from 'backend.convert_dbf' (c:\xampp\htdocs\audit_tool\backend\convert_dbf.py)
+2025-06-11 15:46:23,994 - app - ERROR - CRITICAL: Failed to import a required module during startup: attempted relative import with no known parent package
+2025-06-11 15:48:38,050 - app - ERROR - CRITICAL: Failed to import a required module during startup: cannot import name 'convert_dbf_to_csv' from 'backend.convert_dbf' (c:\xampp\htdocs\audit_tool\backend\convert_dbf.py)
+2025-06-11 15:48:52,392 - app - ERROR - CRITICAL: Failed to import a required module during startup: cannot import name 'convert_dbf_to_csv' from 'backend.convert_dbf' (c:\xampp\htdocs\audit_tool\backend\convert_dbf.py)
+2025-06-11 15:52:10,428 - app - ERROR - CRITICAL: Failed to import a required module during startup: cannot import name 'convert_dbf_to_csv' from 'backend.convert_dbf' (c:\xampp\htdocs\audit_tool\backend\convert_dbf.py)
+2025-06-11 15:54:56,152 - app - ERROR - CRITICAL: Failed to import a required module during startup: cannot import name 'convert_dbf_to_csv' from 'backend.convert_dbf' (c:\xampp\htdocs\audit_tool\backend\convert_dbf.py)
+2025-06-11 15:55:08,775 - app - ERROR - CRITICAL: Failed to import a required module during startup: cannot import name 'convert_dbf_to_csv' from 'backend.convert_dbf' (c:\xampp\htdocs\audit_tool\backend\convert_dbf.py)
+2025-06-11 15:55:43,627 - app - ERROR - CRITICAL: Failed to import a required module during startup: cannot import name 'convert_dbf_to_csv' from 'backend.convert_dbf' (c:\xampp\htdocs\audit_tool\backend\convert_dbf.py)
+2025-07-18 09:32:32 - CRITICAL - Error creating SQLAlchemy engine: (pymysql.err.OperationalError) (1049, "Unknown database 'audit_tool_db'")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-07-18 09:32:33 - CRITICAL - Error creating SQLAlchemy engine: (pymysql.err.OperationalError) (1049, "Unknown database 'audit_tool_db'")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

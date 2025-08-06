@@ -1,0 +1,108 @@
+/* audit_tool/css/operations_dosri.css */
+
+/* --- Modal Overlay Styles --- */
+/* These styles ensure modals and messages appear as overlays, centered,
+   and on top of other content. */
+.modal.hidden {
+    display: none !important; /* Ensure it is hidden when needed */
+}
+
+/* Ensure the modal overlay itself covers the full screen */
+.modal {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    display: flex !important; /* Use flexbox for centering */
+    align-items: center !important; /* Center vertically */
+    justify-content: center !important; /* Center horizontally */
+    background-color: rgba(107, 114, 128, 0.5) !important; /* Tailwind's bg-gray-600 with 50% opacity */
+    z-index: 9999 !important; /* High z-index to appear on top */
+    padding: 1rem !important; /* Padding for smaller screens */
+    box-sizing: border-box !important; /* Include padding in dimensions */
+}
+
+/* --- Specific Modal Content Sizing --- */
+
+/* Styles for the "Add/Edit DOSRI" form modal content */
+/* This targets the inner content div of the modal */
+#dosriModal .modal-content {
+    /* Equivalent to Tailwind's max-w-6xl (1152px) for a wide form */
+    max-width: 72rem !important; /* 1152px / 16px = 72rem */
+    width: 100% !important; /* Ensure it takes full width up to its max-width */
+    background-color: #fff !important; /* bg-white */
+    padding: 1.5rem !important; /* p-6 */
+    border-radius: 0.5rem !important; /* rounded-lg */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important; /* shadow-xl */
+}
+
+/* Styles for the "Upload CSV" modal content */
+#uploadCsvModal .modal-content {
+    /* Equivalent to Tailwind's max-w-md (448px) for a medium-sized form */
+    max-width: 28rem !important; /* 448px / 16px = 28rem */
+    width: 100% !important;
+    background-color: #fff !important; /* bg-white */
+    padding: 1.5rem !important; /* p-6 */
+    border-radius: 0.5rem !important; /* rounded-lg */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important; /* shadow-xl */
+}
+
+/* Styles for the "List of DOSRI" modal content */
+#dosriListModal .modal-content {
+    /* Equivalent to Tailwind's max-w-4xl (896px) for the list table */
+    max-width: 56rem !important; /* 896px / 16px = 56rem */
+    width: 100% !important;
+    background-color: #fff !important; /* bg-white */
+    padding: 1.5rem !important; /* p-6 */
+    border-radius: 0.5rem !important; /* rounded-lg */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important; /* shadow-xl */
+    max-height: 90vh !important; /* max-h-[90vh] */
+    overflow-y: auto !important; /* overflow-y-auto */
+}
+
+/* Styles for the "Former Employees List" modal content */
+#formerEmployeesListModal .modal-content {
+    /* Same as DOSRI list modal for consistency */
+    max-width: 56rem !important; /* 896px / 16px = 56rem */
+    width: 100% !important;
+    background-color: #fff !important; /* bg-white */
+    padding: 1.5rem !important; /* p-6 */
+    border-radius: 0.5rem !important; /* rounded-lg */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important; /* shadow-xl */
+    max-height: 90vh !important; /* max-h-[90vh] */
+    overflow-y: auto !important; /* overflow-y-auto */
+}
+
+
+/* --- Message Box Styles --- */
+/* This targets the outer container of the message box */
+#messageBox {
+    /* Inherits .modal styles for fixed positioning, centering, overlay */
+    /* Overrides the background for specific alert messaging to be transparent */
+    background-color: transparent !important; 
+}
+
+/* This targets the inner content of the message box, which holds the actual text */
+#messageBox div {
+    /* Ensure the inner message box content is styled for visibility and appearance */
+    color: #fff !important; /* text-white */
+    font-weight: 600 !important; /* font-semibold */
+    border-radius: 0.5rem !important; /* rounded-lg */
+    padding: 1.5rem 2rem !important; /* px-8 py-6 */
+    text-align: center !important; /* text-center */
+    max-width: 28rem !important; /* max-w-sm */
+    margin-left: auto !important; /* mx-auto */
+    margin-right: auto !important; /* mx-auto */
+}
+
+/* Specific background colors for message types, applied by JS */
+#messageBox div.bg-green-500 {
+    background-color: #22c55e !important; /* green-500 */
+}
+#messageBox div.bg-red-500 {
+    background-color: #ef4444 !important; /* red-500 */
+}
+#messageBox div.bg-yellow-500 {
+    background-color: #eab308 !important; /* yellow-500 */
+}

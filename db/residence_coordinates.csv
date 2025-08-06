@@ -1,0 +1,627 @@
+id,province_city,city_mun_brgy,latitude,longitude
+1,Agusan del Norte,Buenavista,8.7859,125.3686
+2,Agusan del Norte,Butuan,8.9475,125.5406
+3,Agusan del Norte,Cabadbaran,9.1222,125.5376
+4,Agusan del Norte,Carmen,8.9387,125.2478
+5,Agusan del Norte,Jabonga,9.3294,125.5529
+6,Agusan del Norte,Kitcharao,9.4207,125.6205
+7,Agusan del Norte,Las Nieves,8.7069,125.4124
+8,Agusan del Norte,Magallanes,9.0356,125.5548
+9,Agusan del Norte,Nasipit,8.9715,125.3518
+10,Agusan del Norte,Remedios T. Romualdez,9.05,125.59
+11,Agusan del Norte,Santiago,9.2417,125.6314
+12,Agusan del Norte,Tubay,9.167,125.524
+13,Bukidnon,Baungon,8.3125,124.6872222
+14,Bukidnon,Cabanglasan,8.0763889,125.3011111
+15,Bukidnon,Damulog,7.4813889,124.9388889
+16,Bukidnon,Dangcagan,7.61,125.0041667
+17,Bukidnon,Don Carlos,7.6838889,124.9947222
+18,Bukidnon,Impasug-ong,8.3033333,125.0008333
+19,Bukidnon,Kadingilan,7.6,124.91
+20,Bukidnon,Kalilangan,7.7466667,124.7480556
+21,Bukidnon,Kibawe,7.5677778,124.9902778
+22,Bukidnon,Kitaotao,7.6388889,125.0075
+23,Bukidnon,Lantapan,8.0261111,124.9880556
+24,Bukidnon,Libona,8.3347222,124.7436111
+25,Bukidnon,Malaybalay,8.1552778,125.1302778
+26,Bukidnon,Malitbog,8.5363889,124.8791667
+27,Bukidnon,Manolo Fortich,8.3658333,124.8636111
+28,Bukidnon,Maramag,7.7611111,125.0047222
+29,Bukidnon,Pangantucan,7.8322222,124.8283333
+30,Bukidnon,Quezon,7.7308333,125.1
+31,Bukidnon,San Fernando,7.9166667,125.3286111
+32,Bukidnon,Sumilao,8.3269444,124.9777778
+33,Bukidnon,Talakag,8.2322222,124.6036111
+34,Bukidnon,Valencia,7.9027778,125.0897222
+35,Camiguin,Catarman,9.1698,124.6746
+36,Camiguin,Guinsiliban,9.1,124.7854
+37,Camiguin,Mahinog,9.1559,124.7846
+38,Camiguin,Mambajao,9.2322,124.7078
+39,Camiguin,Sagay,9.1249,124.7409
+40,Davao del Norte,Asuncion (Saug),7.5383333,125.7533333
+41,Davao del Norte,Braulio E. Dujali,7.4483333,125.6894444
+42,Davao del Norte,Carmen,7.3555556,125.7044444
+43,Davao del Norte,Kapalong,7.5852778,125.7072222
+44,Davao del Norte,New Corella,7.5866667,125.8222222
+45,Davao del Norte,Panabo,7.3002778,125.6825
+46,Davao del Norte,Samal,7.0744444,125.7086111
+47,Davao del Norte,San Isidro,7.7383333,125.7469444
+48,Davao del Norte,Santo Tomas,7.5286111,125.6238889
+49,Davao del Norte,Tagum,7.7522222,126.3597222
+50,Davao del Norte,Talaingod,8.0488889,126.0402778
+51,Lanao del Norte,Bacolod,8.1902778,124.0202778
+52,Lanao del Norte,Baloi (Balo-i),8.1144444,124.2211111
+53,Lanao del Norte,Baroy,8.0255556,123.7788889
+54,Lanao del Norte,Iligan,8.2286111,124.2380556
+55,Lanao del Norte,Kapatagan,7.8983333,123.7697222
+56,Lanao del Norte,Kauswagan,8.1913889,124.0880556
+57,Lanao del Norte,Kolambugan,8.1119444,123.8958333
+58,Lanao del Norte,Lala,7.9730556,123.7475
+59,Lanao del Norte,Linamon,8.1827778,124.1616667
+60,Lanao del Norte,Magsaysay,8.0355556,123.9136111
+61,Lanao del Norte,Maigo,8.1591667,123.9588889
+62,Lanao del Norte,Matungao,8.1333333,124.1663889
+63,Lanao del Norte,Munai,7.9725,124.0616667
+64,Lanao del Norte,Nunungan,7.8108333,123.9441667
+65,Lanao del Norte,Pantao Ragat,8.06,124.1822222
+66,Lanao del Norte,Pantar,8.0644444,124.2630556
+67,Lanao del Norte,Poona Piagapo,8.0827778,124.1408333
+68,Lanao del Norte,Salvador,7.9027778,123.8411111
+69,Lanao del Norte,Sapad,7.8452778,123.8369444
+70,Lanao del Norte,Sultan Naga Dimaporo(Karomatan),7.795,123.7152778
+71,Lanao del Norte,Tagoloan,8.1269444,124.2758333
+72,Lanao del Norte,Tangcal,7.9963889,123.9972222
+73,Lanao del Norte,Tubod,8.0533333,123.7916667
+74,Misamis Occidental,Aloran,8.4166667,123.8197222
+75,Misamis Occidental,Baliangao,8.6602778,123.6011111
+76,Misamis Occidental,Bonifacio,8.0522222,123.6136111
+77,Misamis Occidental,Calamba,8.5580556,123.6441667
+78,Misamis Occidental,Clarin,8.1997222,123.8616667
+79,Misamis Occidental,Concepcion,8.4227778,123.6047222
+80,Misamis Occidental,Don Victoriano Chiongbian (Don Mariano Marcos),8.2655556,123.6044444
+81,Misamis Occidental,Jimenez,8.3341667,123.84
+82,Misamis Occidental,Lopez Jaena,8.5516667,123.7675
+83,Misamis Occidental,Oroquieta,8.4852778,123.8058333
+84,Misamis Occidental,Ozamis (Ozamiz),8.1469444,123.8452778
+85,Misamis Occidental,Panaon,8.3647222,123.84
+86,Misamis Occidental,Plaridel,8.6208333,123.7094444
+87,Misamis Occidental,Sapang Dalaga,8.5411111,123.5663889
+88,Misamis Occidental,Sinacaban,8.2852778,123.8430556
+89,Misamis Occidental,Tangub,8.0611111,123.7508333
+90,Misamis Occidental,Tudela,8.2430556,123.8452778
+91,Misamis Oriental,Alubijid,8.57,124.4711111
+92,Misamis Oriental,Balingasag,8.7427778,124.7744444
+93,Misamis Oriental,Balingoan,9.0041667,124.8463889
+94,Misamis Oriental,Binuangan,8.9188889,124.7838889
+95,Misamis Oriental,Cagayan de Oro,8.4841667,124.6472222
+96,Misamis Oriental,Claveria,8.6122222,124.8927778
+97,Misamis Oriental,El Salvador,8.5611111,124.5244444
+98,Misamis Oriental,Gingoog,8.8247222,125.1036111
+99,Misamis Oriental,Gitagum,8.5944444,124.4058333
+100,Misamis Oriental,Initao,8.4975,124.3055556
+101,Misamis Oriental,Jasaan,8.6516667,124.7536111
+102,Misamis Oriental,Kinoguitan,8.9844444,124.7930556
+103,Misamis Oriental,Lagonglong,8.8055556,124.7908333
+104,Misamis Oriental,Laguindingan,8.5747222,124.4408333
+105,Misamis Oriental,Libertad,8.5577778,124.3533333
+106,Misamis Oriental,Lugait,8.3427778,124.2608333
+107,Misamis Oriental,Magsaysay (Linugos),9.0197222,125.1813889
+108,Misamis Oriental,Manticao,8.4002778,124.2919444
+109,Misamis Oriental,Medina,8.9113889,125.0238889
+110,Misamis Oriental,Naawan,8.4336111,124.2908333
+111,Misamis Oriental,Opol,8.5211111,124.5747222
+112,Misamis Oriental,Salay,8.8833333,124.8166667
+113,Misamis Oriental,Sugbongcogon,8.9561111,124.7872222
+114,Misamis Oriental,Tagoloan,8.5391667,124.7538889
+115,Misamis Oriental,Talisayan,8.9958333,124.8836111
+116,Misamis Oriental,Villanueva,8.5858333,124.7702778
+117,Agusan del Sur,Bayugan,8.7144,125.7481
+118,Agusan del Sur,Bunawan,8.2165,126.0458
+119,Agusan del Sur,Esperanza,8.5655,125.522
+120,Agusan del Sur,La Paz,8.2611,125.6095
+121,Agusan del Sur,Loreto,8.1141,125.6095
+122,Agusan del Sur,Prosperidad,8.6024,125.8716
+123,Agusan del Sur,Rosario,8.3126,126.0036
+124,Agusan del Sur,San Francisco,8.509,125.9697
+125,Agusan del Sur,San Luis,8.4176,125.522
+126,Agusan del Sur,Santa Josefa,7.9836,126.0277
+127,Agusan del Sur,Sibagat,8.9661,125.7625
+128,Agusan del Sur,Talacogon,8.3697,125.8062
+129,Agusan del Sur,Trento,8.0526,126.2197
+130,Agusan del Sur,Veruela,8.0307,125.8934
+131,Basilan,Akbar,6.6491,122.2143
+132,Basilan,Al-Barka,6.5586,122.087
+133,Basilan,Hadji Mohammad Ajul,6.6423,122.2732
+134,Basilan,Hadji Muhtamad,6.6496,121.987
+135,Basilan,Lamitan,6.6615,122.1065
+136,Basilan,Lantawan,6.5978,121.9024
+137,Basilan,Maluso,6.5654,121.9105
+138,Basilan,Sumisip,6.45,121.9666
+139,Basilan,Tabuan-Lasa,6.318,121.9289
+140,Basilan,Tipo-Tipo,6.5372,122.1633
+141,Basilan,Tuburan,6.6079,122.2087
+142,Basilan,Ungkaya Pukan,6.5504,122.1065
+143,Davao de Oro,Compostela,7.6684,126.0841
+144,Davao de Oro,Laak (San Vicente),7.8179,125.7895
+145,Davao de Oro,Mabini (Doña Alicia),7.2889,125.858
+146,Davao de Oro,Maco,7.3624,125.8579
+147,Davao de Oro,Maragusan (San Mariano),7.3654,126.0843
+148,Davao de Oro,Mawab,7.5076,125.9207
+149,Davao de Oro,Monkayo,7.8514,126.0458
+150,Davao de Oro,Montevista,7.7345,125.9734
+151,Davao de Oro,Nabunturan,7.6005,125.9846
+152,Davao de Oro,New Bataan,7.5483,126.1379
+153,Davao de Oro,Pantukan,7.1314,125.8972
+154,Cotabato,Alamada,7.39,124.5497222
+155,Cotabato,Aleosan,7.1522222,124.5813889
+156,Cotabato,Antipas,7.245,125.0538889
+157,Cotabato,Arakan,7.3513889,125.1261111
+158,Cotabato,Banisilan,7.5058333,124.6947222
+159,Cotabato,Carmen,7.2044444,124.7952778
+160,Cotabato,Kabacan,7.1166667,124.8166667
+161,Cotabato,Kidapawan,7.0083333,125.0916667
+162,Cotabato,Libungan,7.2402778,124.5197222
+163,Cotabato,Magpet,6.9463889,124.8783333
+164,Cotabato,Makilala,7.1022222,125.1244444
+165,Cotabato,Matalam,6.9613889,125.0858333
+166,Cotabato,Midsayap,7.0986111,124.8997222
+167,Cotabato,M'lang,7.1891667,124.535
+168,Cotabato,Pigkawayan(Pigcawayan),7.2791667,124.4241667
+169,Cotabato,Pikit,7.0536111,124.6722222
+170,Cotabato,President Roxas,7.1541667,125.0552778
+171,Cotabato,Tulunan,6.8305556,124.8727778
+172,Davao del Sur,Bansalan,6.7863889,125.2127778
+173,Davao del Sur,Davao,7.0638889,125.6083333
+174,Davao del Sur,Digos,6.7441667,125.3563889
+175,Davao del Sur,Hagonoy,6.6886111,125.2977778
+176,Davao del Sur,Kiblawan,6.6197222,125.2519444
+177,Davao del Sur,Magsaysay,6.7558333,125.15
+178,Davao del Sur,Malalag,6.5986111,125.4
+179,Davao del Sur,Matanao,6.7086111,125.2163889
+180,Davao del Sur,Padada,6.6397222,125.3436111
+181,Davao del Sur,Santa Cruz,6.8338889,125.4152778
+182,Davao del Sur,Sulop,6.5988889,125.3466667
+183,Davao Occidental,Don Marcelino,6.1025,125.5914
+184,Davao Occidental,Jose Abad Santos(Trinidad),5.9129,125.6441
+185,Davao Occidental,Malita,6.3843,125.5816
+186,Davao Occidental,Santa Maria,6.4298,125.465
+187,Davao Occidental,Sarangani,5.4188,125.4563
+188,Davao Oriental,Baganga,7.5741667,126.5611111
+189,Davao Oriental,Banaybanay,6.9605556,126.0072222
+190,Davao Oriental,Boston,7.8688889,126.3733333
+191,Davao Oriental,Caraga,7.3313889,126.5644444
+192,Davao Oriental,Cateel,7.7897222,126.4525
+193,Davao Oriental,Governor Generoso,6.6583333,126.0797222
+194,Davao Oriental,Lupon,6.9027778,126.015
+195,Davao Oriental,Manay,7.2138889,126.5391667
+196,Davao Oriental,Mati,6.9613889,126.2147222
+197,Davao Oriental,San Isidro,6.8352778,126.0894444
+198,Davao Oriental,Tarragona,7.0494444,126.4488889
+199,Dinagat Islands,Basilisa (Rizal),10.0668,125.6029
+200,Dinagat Islands,Cagdianao,9.9166667,125.6666667
+201,Dinagat Islands,Dinagat,9.95,125.6166667
+202,Dinagat Islands,Libjo (Albor),10.1953,125.5325
+203,Dinagat Islands,Loreto,10.3592,125.5793
+204,Dinagat Islands,San Jose,10.0255,125.5986
+205,Dinagat Islands,Tubajon,10.2934,125.5767
+206,Lanao del Sur,Amai Manabilang (Bumbaran),7.7852778,124.6808333
+207,Lanao del Sur,Bacolod-Kalawi (Bacolod-Grande),7.8575,124.1422222
+208,Lanao del Sur,Balabagan,7.5080556,124.1280556
+209,Lanao del Sur,Balindong (Watu),7.9102778,124.1997222
+210,Lanao del Sur,Bayang,7.7936111,124.1986111
+211,Lanao del Sur,Binidayan,7.7947222,124.1672222
+212,Lanao del Sur,Buadiposo-Buntong,7.9666667,124.3833333
+213,Lanao del Sur,Bubong,7.9830556,124.385
+214,Lanao del Sur,Butig,7.7433333,124.3125
+215,Lanao del Sur,Calanogas,7.7352778,124.0813889
+216,Lanao del Sur,Ditsaan-Ramain,7.9788889,124.3516667
+217,Lanao del Sur,Ganassi,7.8263889,124.1033333
+218,Lanao del Sur,Kapai,8.0802778,124.405
+219,Lanao del Sur,Kapatagan,7.45,124.1333333
+220,Lanao del Sur,Lumba-Bayabao (Maguing),7.8636111,124.3725
+221,Lanao del Sur,Lumbaca-Unayan,7.7238889,124.2386111
+222,Lanao del Sur,Lumbatan,7.7855556,124.2563889
+223,Lanao del Sur,Lumbayanague,7.7713889,124.2813889
+224,Lanao del Sur,Madalum,7.8536111,124.1130556
+225,Lanao del Sur,Madamba,7.8661111,124.0627778
+226,Lanao del Sur,Maguing,7.8852778,124.4025
+227,Lanao del Sur,Malabang,7.5963889,124.0736111
+228,Lanao del Sur,Marantao,7.9483333,124.2311111
+229,Lanao del Sur,Marawi,8.0033333,124.2866667
+230,Lanao del Sur,Marogong,7.6775,124.15
+231,Lanao del Sur,Masiu,7.8183333,124.3319444
+232,Lanao del Sur,Mulondo,7.9175,124.3619444
+233,Lanao del Sur,Pagayawan (Tatarikan),7.7383333,124.115
+234,Lanao del Sur,Piagapo,7.9897222,124.18
+235,Lanao del Sur,Picong (Sultan Gumander),7.6847222,123.9358333
+236,Lanao del Sur,Poona Bayabao (Gata),7.8513889,124.3391667
+237,Lanao del Sur,Pualas,7.82,124.0797222
+238,Lanao del Sur,Saguiaran,8.0341667,124.2686111
+239,Lanao del Sur,Sultan Dumalondong,7.7569444,124.2577778
+240,Lanao del Sur,Tagoloan II,8.0883333,124.4583333
+241,Lanao del Sur,Tamparan,7.8763889,124.3361111
+242,Lanao del Sur,Taraka,7.8988889,124.3344444
+243,Lanao del Sur,Tubaran,7.6972222,124.1136111
+244,Lanao del Sur,Tugaya,7.8836111,124.1777778
+245,Lanao del Sur,Wao,7.6397222,124.7233333
+246,Maguindanao,Ampatuan,6.8327,124.4594
+247,Maguindanao,Barira,7.487,124.299
+248,Maguindanao,Buldon,7.5093,124.3714
+249,Maguindanao,Buluan,6.7433,124.8017
+250,Maguindanao,Datu Abdullah Sangki,6.7787,124.4768
+251,Maguindanao,Datu Anggal Midtimbang,7.0105,124.3474
+252,Maguindanao,Datu Blah T. Sinsuat,6.8653,124.0196
+253,Maguindanao,Datu Hoffer Ampatuan(← Shariff Aguak),6.8595,124.4341
+254,Maguindanao,Datu Odin Sinsuat(Dinaig),7.2166667,124.1838889
+255,Maguindanao,Datu Paglas,6.7669444,124.85
+256,Maguindanao,Datu Piang,7.0289,124.4995
+257,Maguindanao,Datu Salibo (← Datu Piang),6.9961,124.4834
+258,Maguindanao,Datu Saudi-Ampatuan,6.9262,124.414
+259,Maguindanao,Datu Unsay,6.9122,124.4531
+260,Maguindanao,General Salipada K. Pendatun,6.7873,124.7954
+261,Maguindanao,Guindulungan,6.9541,124.3865
+262,Maguindanao,Kabuntalan (Tumbao),7.1176,124.3844
+263,Maguindanao,Mamasapano,6.8949,124.5047
+264,Maguindanao,Mangudadatu,6.57417,124.825
+265,Maguindanao,Matanog,7.4671,124.2589
+266,Maguindanao,Northern Kabuntalan,7.1308,124.3976
+267,Maguindanao,Pagagawan (Datu Montawal),7.1047,124.763
+268,Maguindanao,Pagalungan,6.9693,124.752
+269,Maguindanao,Paglat,6.7,124.7833
+270,Maguindanao,Pandag,6.7763,124.7851
+271,Maguindanao,Parang,7.3331,124.231
+272,Maguindanao,Rajah Buayan,6.91083,124.55083
+273,Maguindanao,Shariff Aguak(Maganoy),6.8611,124.4446
+274,Sarangani,Alabel,6.185,125.3466
+275,Sarangani,Glan,5.8225,125.2046
+276,Sarangani,Kiamba,6.0234,124.6414
+277,Sarangani,Maasim,5.9267,124.9948
+278,Sarangani,Maitum,6.1241,124.4864
+279,Sarangani,Malapatan,5.9663,125.2854
+280,Sarangani,Malungon,6.3752,125.2717
+281,South Cotabato,Banga,6.4236111,124.7733333
+282,South Cotabato,General Santos(Dadiangas),6.1138889,125.1716667
+283,South Cotabato,Koronadal,6.5002778,124.8436111
+284,South Cotabato,Lake Sebu,6.2247222,124.7116667
+285,South Cotabato,Norala,6.5188889,124.6566667
+286,South Cotabato,Polomolok,6.2141667,125.0644444
+287,South Cotabato,Santo Niño,6.4380556,124.6733333
+288,South Cotabato,Surallah,6.3755556,124.7472222
+289,South Cotabato,Tampakan,6.2136111,124.8225
+290,South Cotabato,Tantangan,6.4438889,124.9272222
+291,South Cotabato,T'Boli,6.5633333,124.7683333
+292,South Cotabato,Tupi,6.3311111,124.9508333
+293,Sultan Kudarat,Bagumbayan,6.5402778,124.5669444
+294,Sultan Kudarat,Columbio,6.6316667,124.9741667
+295,Sultan Kudarat,Esperanza,6.7225,124.5205556
+296,Sultan Kudarat,Isulan,6.6338889,124.5972222
+297,Sultan Kudarat,Kalamansig,6.555,124.0497222
+298,Sultan Kudarat,Lambayong (Mariano Marcos),6.7983333,124.6325
+299,Sultan Kudarat,Lebak,6.6325,124.0661111
+300,Sultan Kudarat,Lutayan,6.5594444,124.8586111
+301,Sultan Kudarat,Palimbang,6.2108333,124.1891667
+302,Sultan Kudarat,President Quirino,6.6983333,124.7402778
+303,Sultan Kudarat,Senator Ninoy Aquino(Senator Ninoy Aquino),6.4594444,124.3222222
+304,Sultan Kudarat,Tacurong,6.6883333,124.6786111
+305,Sulu,Hadji Panglima Tahil(Marunggas),6.0255556,121.8363889
+306,Sulu,Indanan,6.1102778,120.9661111
+307,Sulu,Jolo,5.9722222,120.9694444
+308,Sulu,Kalingalan Caluang,6.0536111,121.0002778
+309,Sulu,Lugus,5.8841667,121.2633333
+310,Sulu,Luuk,5.7033333,120.8197222
+311,Sulu,Maimbung,5.9677778,121.3130556
+312,Sulu,Old Panamao,5.9308333,121.0269444
+313,Sulu,Omar,5.98,121.2183333
+314,Sulu,Pandami,6.01,121.3836111
+315,Sulu,Panglima Estino (New Panamao),5.5505556,120.8083333
+316,Sulu,Pangutaran,5.9569444,121.1961111
+317,Sulu,Parang,6.3,120.5836111
+318,Sulu,Pata,5.9127778,120.9052778
+319,Sulu,Patikul,5.8411111,121.1819444
+320,Sulu,Siasi,6.0886111,121.1069444
+321,Sulu,Talipao,5.5433333,120.8147222
+322,Sulu,Tapul,5.9752778,121.1080556
+323,Sulu,Tongkil (Banguingui),5.705,120.8813889
+324,Surigao del Norte,Alegria,9.4683333,125.5766667
+325,Surigao del Norte,Bacuag,9.6083333,125.6383333
+326,Surigao del Norte,Burgos,10.0180556,126.0741667
+327,Surigao del Norte,Claver,9.5730556,125.7325
+328,Surigao del Norte,Dapa,9.7569444,126.0513889
+329,Surigao del Norte,Del Carmen,9.8686111,125.9705556
+330,Surigao del Norte,General Luna,9.7833333,126.1563889
+331,Surigao del Norte,Gigaquit,9.5938889,125.6975
+332,Surigao del Norte,Mainit,9.5377778,125.5225
+333,Surigao del Norte,Malimono,9.6183333,125.4016667
+334,Surigao del Norte,Pilar,9.8638889,126.1002778
+335,Surigao del Norte,Placer,9.6572222,125.6013889
+336,Surigao del Norte,San Benito,9.9577778,126.0066667
+337,Surigao del Norte,San Francisco (Anao-Aon),9.7777778,125.4238889
+338,Surigao del Norte,San Isidro,9.9363889,126.0869444
+339,Surigao del Norte,Santa Monica (Sapao),10.0188889,126.0363889
+340,Surigao del Norte,Sison,9.6588889,125.5286111
+341,Surigao del Norte,Socorro,9.6183333,125.965
+342,Surigao del Norte,Surigao,9.7877778,125.4916667
+343,Surigao del Norte,Tagana-an,9.6972222,125.5825
+344,Surigao del Norte,Tubod,9.5555556,125.5688889
+345,Surigao del Sur,Barobo,8.5363889,126.1205556
+346,Surigao del Sur,Bayabas,8.9675,126.2827778
+347,Surigao del Sur,Bislig,8.2116667,126.3166667
+348,Surigao del Sur,Cagwait,8.9183333,126.3016667
+349,Surigao del Sur,Cantilan,9.3347222,125.9758333
+350,Surigao del Sur,Carmen,9.2286111,126.0166667
+351,Surigao del Sur,Carrascal,9.3683333,125.9486111
+352,Surigao del Sur,Cortes,9.2747222,126.1902778
+353,Surigao del Sur,Hinatuan,8.3655556,126.3358333
+354,Surigao del Sur,Lanuza,9.2336111,126.0602778
+355,Surigao del Sur,Lianga,8.6327778,126.0927778
+356,Surigao del Sur,Lingig,8.0375,126.4122222
+357,Surigao del Sur,Madrid,9.2625,125.9636111
+358,Surigao del Sur,Marihatag,8.8005556,126.2986111
+359,Surigao del Sur,San Agustin,8.7436111,126.2219444
+360,Surigao del Sur,San Miguel,8.9341667,126.0397222
+361,Surigao del Sur,Tagbina,8.4572222,126.1588889
+362,Surigao del Sur,Tago,9.0194444,126.2330556
+363,Surigao del Sur,Tandag,9.0797222,126.1975
+364,Tawi Tawi,Bongao,5.1042,119.8121
+365,Tawi Tawi,Languyan,5.3764,120.2282
+366,Tawi Tawi,Mapun (Cagayan de Tawi-Tawi),6.9765,118.5136
+367,Tawi Tawi,Panglima Sugala(Balimbing),5.0948,119.9972
+368,Tawi Tawi,Sapa-Sapa,5.0853,120.182
+369,Tawi Tawi,Sibutu,4.7814,119.476
+370,Tawi Tawi,Simunul,4.8563,119.8237
+371,Tawi Tawi,Sitangkai,4.7438,119.4005
+372,Tawi Tawi,South Ubian,5.3958,120.3781
+373,Tawi Tawi,Tandubas,5.2075,120.2974
+374,Tawi Tawi,Turtle Islands,6.0833333,118.3166667
+375,Zamboanga del Norte,Bacungan (Leon T. Postigo),7.8105556,122.1452778
+376,Zamboanga del Norte,Baliguian,8.6547222,123.4222222
+377,Zamboanga del Norte,Dapitan,8.5861111,123.3411111
+378,Zamboanga del Norte,Dipolog,7.9983333,122.8416667
+379,Zamboanga del Norte,Godod,7.9725,122.3994444
+380,Zamboanga del Norte,Gutalac,8.4425,123.0222222
+381,Zamboanga del Norte,Jose Dalman (Ponot),7.9047222,122.5263889
+382,Zamboanga del Norte,Kalawit,8.5127778,123.2847222
+383,Zamboanga del Norte,Katipunan,8.4686111,123.5258333
+384,Zamboanga del Norte,Labason,8.0644444,122.5244444
+385,Zamboanga del Norte,La Libertad,8.1527778,122.925
+386,Zamboanga del Norte,Liloy,8.1233333,122.6791667
+387,Zamboanga del Norte,Manukan,8.5158333,123.0938889
+388,Zamboanga del Norte,Mutia,8.42,123.4761111
+389,Zamboanga del Norte,Piñan (New Piñan),8.4791667,123.4497222
+390,Zamboanga del Norte,Polanco,8.5311111,123.3627778
+391,Zamboanga del Norte,President Manuel A. Roxas,8.5141667,123.2325
+392,Zamboanga del Norte,Rizal,8.5255556,123.5516667
+393,Zamboanga del Norte,Salug,8.1069444,122.7569444
+394,Zamboanga del Norte,Sergio Osmeña Sr.,8.2991667,123.5083333
+395,Zamboanga del Norte,Siayan,8.2513889,123.1133333
+396,Zamboanga del Norte,Sibuco,7.2922222,122.0666667
+397,Zamboanga del Norte,Sibutad,8.6125,123.48
+398,Zamboanga del Norte,Sindangan,8.2341667,122.9991667
+399,Zamboanga del Norte,Siocon,7.7066667,122.1394444
+400,Zamboanga del Norte,Sirawai,7.5872222,122.14
+401,Zamboanga del Norte,Tampilisan,7.9741667,122.6641667
+402,Zamboanga del Sur,Aurora,7.9533333,123.5841667
+403,Zamboanga del Sur,Bayog,7.8469444,123.0425
+404,Zamboanga del Sur,Dimataling,7.53,123.3652778
+405,Zamboanga del Sur,Dinas,7.6161111,123.3377778
+406,Zamboanga del Sur,Dumalinao,7.8183333,123.3627778
+407,Zamboanga del Sur,Dumingag,8.1555556,123.3452778
+408,Zamboanga del Sur,Guipos,7.7316667,123.3211111
+409,Zamboanga del Sur,Josefina,8.2158333,123.5447222
+410,Zamboanga del Sur,Kumalarang,7.7475,123.1458333
+411,Zamboanga del Sur,Labangan,7.8638889,123.5130556
+412,Zamboanga del Sur,Lakewood,7.8527778,123.1511111
+413,Zamboanga del Sur,Lapuyan,7.6319444,123.1916667
+414,Zamboanga del Sur,Mahayag,8.1297222,123.4383333
+415,Zamboanga del Sur,Margosatubig,7.5752778,123.1658333
+416,Zamboanga del Sur,Midsalip,8.0305556,123.3158333
+417,Zamboanga del Sur,Molave,8.0927778,123.485
+418,Zamboanga del Sur,Pagadian,7.825,123.4363889
+419,Zamboanga del Sur,Pitogo,7.4516667,123.3133333
+420,Zamboanga del Sur,Ramon Magsaysay(Liargo),8.0038889,123.4855556
+421,Zamboanga del Sur,San Miguel,7.6483333,123.2675
+422,Zamboanga del Sur,San Pablo,7.6558333,123.4611111
+423,Zamboanga del Sur,Sominot (Don Mariano Marcos),8.0411111,123.3822222
+424,Zamboanga del Sur,Tabina,7.4652778,123.41
+425,Zamboanga del Sur,Tambulig,8.0680556,123.5352778
+426,Zamboanga del Sur,Tigbao,7.8202778,123.2277778
+427,Zamboanga del Sur,Tukuran,7.855,123.575
+428,Zamboanga del Sur,Vincenzo A. Sagun,7.5163889,123.1763889
+429,Zamboanga del Sur,Zamboanga,6.9047222,122.0763889
+430,Zamboanga Sibugay,Alicia,7.505,122.9413889
+431,Zamboanga Sibugay,Buug,7.7227778,123.0577778
+432,Zamboanga Sibugay,Diplahan,7.6916667,122.9852778
+433,Zamboanga Sibugay,Imelda,7.6422222,122.9341667
+434,Zamboanga Sibugay,Ipil,7.7825,122.5869444
+435,Zamboanga Sibugay,Kabasalan,7.7975,122.7619444
+436,Zamboanga Sibugay,Mabuhay,7.4175,122.8361111
+437,Zamboanga Sibugay,Malangas,7.6291667,123.0305556
+438,Zamboanga Sibugay,Naga,7.7883333,122.6952778
+439,Zamboanga Sibugay,Olutanga,7.3083333,122.845
+440,Zamboanga Sibugay,Payao,7.5858333,122.8022222
+441,Zamboanga Sibugay,Roseller Lim,7.6586111,122.4663889
+442,Zamboanga Sibugay,Siay,7.7061111,122.8641667
+443,Zamboanga Sibugay,Talusan,7.4266667,122.8102778
+444,Zamboanga Sibugay,Titay,7.8677778,122.5605556
+445,Zamboanga Sibugay,Tungawan,7.6013889,122.4261111
+446,Bohol,Alburquerque,9.6102778,123.9572222
+447,Bohol,Alicia,9.8986111,124.4408333
+448,Bohol,Anda,9.7452778,124.5763889
+449,Bohol,Antequera,9.7811111,123.8977778
+450,Bohol,Baclayon,9.6225,123.9116667
+451,Bohol,Balilihan,9.7561111,123.9716667
+452,Bohol,Batuan,9.7838889,124.1491667
+453,Bohol,Bien Unido,10.1377778,124.3788889
+454,Bohol,Bilar,9.7069444,124.1044444
+455,Bohol,Buenavista,10.0816667,124.1091667
+456,Bohol,Calape,9.8905556,123.8716667
+457,Bohol,Candijay,9.8172222,124.4961111
+458,Bohol,Carmen,9.8247222,124.1975
+459,Bohol,Catigbian,9.8508333,124
+460,Bohol,Clarin,9.9625,124.0244444
+461,Bohol,Corella,9.6872222,123.9213889
+462,Bohol,Cortes,9.7225,123.8791667
+463,Bohol,Dagohoy,9.9363889,124.3152778
+464,Bohol,Danao,9.9447222,124.2219444
+465,Bohol,Dauis,9.6238889,123.8663889
+466,Bohol,Dimiao,9.6058333,124.1625
+467,Bohol,Duero,9.7061111,124.4052778
+468,Bohol,Garcia Hernandez,9.6136111,124.295
+469,Bohol,Getafe (Jetafe),10.1497222,124.1533333
+470,Bohol,Guindulman,9.7616667,124.4875
+471,Bohol,Inabanga,10.0322222,124.0663889
+472,Bohol,Jagna,9.65,124.3661111
+473,Bohol,Lila,9.5905556,124.0952778
+474,Bohol,Loay,9.6,124.0105556
+475,Bohol,Loboc,9.6363889,124.0316667
+476,Bohol,Loon,9.7988889,123.7936111
+477,Bohol,Mabini,9.865,124.5197222
+478,Bohol,Maribojoc,9.7408333,123.8427778
+479,Bohol,Panglao,9.5794444,123.7458333
+480,Bohol,Pilar,9.8538889,124.3475
+481,Bohol,President Carlos P. Garcia,10.1208333,124.5536111
+482,Bohol,Sagbayan,9.9130556,124.0933333
+483,Bohol,San Isidro,9.8591667,123.9563889
+484,Bohol,San Miguel,9.9863889,124.3386111
+485,Bohol,Sevilla,9.7033333,124.0463889
+486,Bohol,Sierra Bullones,9.8077778,124.2913889
+487,Bohol,Sikatuna,9.6877778,123.9738889
+488,Bohol,Tagbilaran,9.6405556,123.8563889
+489,Bohol,Talibon,10.1491667,124.3247222
+490,Bohol,Trinidad,10.0772222,124.3405556
+491,Bohol,Tubigon,9.9513889,123.9616667
+492,Bohol,Ubay,10.0580556,124.4716667
+493,Bohol,Valencia,9.6091667,124.205
+494,Cebu,Alcantara,9.9674,125.4552
+495,Cebu,Alcoy,9.7117,123.4608
+496,Cebu,Alegria,9.7601,123.3711
+497,Cebu,Aloguinsan,10.1917,123.5616
+498,Cebu,Argao,9.8818,123.6089
+499,Cebu,Asturias,10.5967,123.8188
+500,Cebu,Badian,9.8321,123.4159
+501,Cebu,Balamban,10.4858,123.7741
+502,Cebu,Bantayan,11.1999,123.7406
+503,Cebu,Barili,10.1219,123.5393
+504,Cebu,Bogo,11.0128,123.9861
+505,Cebu,Boljoon,9.6457,123.4496
+506,Cebu,Borbon,10.8463,123.9973
+507,Cebu,Carcar,10.1151,123.64
+508,Cebu,Carmen,10.5937,124.0186
+509,Cebu,Catmon,10.7209,124.0121
+510,Cebu,Cebu City,10.3157,123.8854
+511,Cebu,Compostela,10.4659,123.9806
+512,Cebu,Consolacion,10.4368,123.9416
+513,Cebu,Cordova,10.2439,123.9416
+514,Cebu,Daanbantayan,11.2465,124.0173
+515,Cebu,Dalaguete,9.7518,123.5078
+516,Cebu,Danao,10.5417,123.9527
+517,Cebu,Dumanjug,10.0572,123.4382
+518,Cebu,Ginatilan,9.5787,123.3598
+519,Cebu,Lapu-Lapu,10.2662,123.9973
+520,Cebu,Liloan,10.4121,123.9861
+521,Cebu,Madridejos,11.2642,123.735
+522,Cebu,Malabuyoc,9.6447,123.3711
+523,Cebu,Mandaue,10.3321,123.9357
+524,Cebu,Medellin,11.1491,123.9861
+525,Cebu,Minglanilla,10.2433,123.789
+526,Cebu,Moalboal,9.9557,123.4008
+527,Cebu,Naga,10.2085,123.7573
+528,Cebu,Oslob,9.563,123.4159
+529,Cebu,Pilar,10.7518,124.5196
+530,Cebu,Pinamungajan,10.2638,123.6064
+531,Cebu,Poro,10.7017,124.4162
+532,Cebu,Ronda,9.9921,123.4496
+533,Cebu,Samboan,9.5044,123.3374
+534,Cebu,San Fernando,10.1871,123.6847
+535,Cebu,San Francisco,10.6472,124.3532
+536,Cebu,San Remigio,10.9601,123.9416
+537,Cebu,Santa Fe,11.1691,123.7909
+538,Cebu,Santander,9.4468,123.3374
+539,Cebu,Sibonga,10.0431,123.5952
+540,Cebu,Sogod,10.7631,123.9639
+541,Cebu,Tabogon,10.9239,123.9973
+542,Cebu,Tabuelan,10.8574,123.9081
+543,Cebu,Talisay,10.257,123.83
+544,Cebu,Toledo,10.387,123.6503
+545,Cebu,Tuburan,10.7076,123.8635
+546,Cebu,Tudela,10.6367,124.4694
+547,Cagayan de Oro,Agusan,8.4856,124.7437
+548,Cagayan de Oro,Baikingon,8.4729,124.5695
+549,Cagayan de Oro,Bulua,8.5044,124.6192
+550,Cagayan de Oro,Balubal,8.4517,124.7796
+551,Cagayan de Oro,Balulang,8.4484,124.6272
+552,Cagayan de Oro,Barangay 1,8.4752,124.6424
+553,Cagayan de Oro,Barangay 2,8.4761,124.6433
+554,Cagayan de Oro,Barangay 3,8.4762,124.6454
+555,Cagayan de Oro,Barangay 4,8.4782,124.6434
+556,Cagayan de Oro,Barangay 5,8.4775,124.6437
+557,Cagayan de Oro,Barangay 6,8.4776,124.6417
+558,Cagayan de Oro,Barangay 7,8.4807,124.6418
+559,Cagayan de Oro,Barangay 8,8.4785,124.6438
+560,Cagayan de Oro,Barangay 9,8.4784,124.6452
+561,Cagayan de Oro,Barangay 10,8.4894,124.6424
+562,Cagayan de Oro,Barangay 11,8.4815,124.6438
+563,Cagayan de Oro,Barangay 12,8.4794,124.6457
+564,Cagayan de Oro,Barangay 13,8.4837,124.6421
+565,Cagayan de Oro,Barangay 14,8.482,124.6445
+566,Cagayan de Oro,Barangay 15,8.4844,124.6431
+567,Cagayan de Oro,Barangay 16,8.484,124.6458
+568,Cagayan de Oro,Barangay 17,8.4867,124.6433
+569,Cagayan de Oro,Barangay 18,8.4858,124.6454
+570,Cagayan de Oro,Barangay 19,8.4845,124.6464
+571,Cagayan de Oro,Barangay 20,8.4858,124.6473
+572,Cagayan de Oro,Barangay 21,8.4908,124.6518
+573,Cagayan de Oro,Barangay 22,8.4903,124.6542
+574,Cagayan de Oro,Barangay 23,8.4875,124.6496
+575,Cagayan de Oro,Barangay 24,8.4846,124.6528
+576,Cagayan de Oro,Barangay 25,8.4865,124.6489
+577,Cagayan de Oro,Barangay 26,8.4855,124.6539
+578,Cagayan de Oro,Barangay 27,8.4828,124.6504
+579,Cagayan de Oro,Barangay 28,8.4818,124.6521
+580,Cagayan de Oro,Barangay 29,8.4809,124.6462
+581,Cagayan de Oro,Barangay 30,8.4808,124.65
+582,Cagayan de Oro,Barangay 31,8.4801,124.6545
+583,Cagayan de Oro,Barangay 32,8.4802,124.6494
+584,Cagayan de Oro,Barangay 33,8.4783,124.6514
+585,Cagayan de Oro,Barangay 34,8.4782,124.6528
+586,Cagayan de Oro,Barangay 35,8.478,124.6549
+587,Cagayan de Oro,Barangay 36,8.4763,124.6549
+588,Cagayan de Oro,Barangay 37,8.4764,124.6535
+589,Cagayan de Oro,Barangay 38,8.4761,124.6507
+590,Cagayan de Oro,Barangay 39,8.4766,124.6495
+591,Cagayan de Oro,Barangay 40,8.4778,124.6469
+592,Cagayan de Oro,Bayabas,8.511,124.6336
+593,Cagayan de Oro,Bayanga,8.3557,124.5999
+594,Cagayan de Oro,Besigan,8.2597,124.5584
+595,Cagayan de Oro,Bonbon,8.5058,124.6483
+596,Cagayan de Oro,Bugo,8.5072,124.7603
+597,Cagayan de Oro,Camaman-an,8.4614,124.6608
+598,Cagayan de Oro,Canito-an,8.48,124.5916
+599,Cagayan de Oro,Carmen,8.4676,124.6221
+600,Cagayan de Oro,Consolacion,8.4897,124.6456
+601,Cagayan de Oro,Cugman,8.4513,124.6912
+602,Cagayan de Oro,Dansolihon,8.3067,124.5485
+603,Cagayan de Oro,F. S. Catanico,8.4387,124.7243
+604,Cagayan de Oro,Gusa,8.4742,124.6821
+605,Cagayan de Oro,Indahag,8.4349,124.6691
+606,Cagayan de Oro,Iponan,8.4914,124.5944
+607,Cagayan de Oro,Kauswagan,8.5005,124.6358
+608,Cagayan de Oro,Lapasan,8.4835,124.6616
+609,Cagayan de Oro,Lumbia,8.4126,124.6103
+610,Cagayan de Oro,Macabalan,8.4997,124.6621
+611,Cagayan de Oro,Macasandig,8.4465,124.6469
+612,Cagayan de Oro,Mambuaya,8.3216,124.5916
+613,Cagayan de Oro,Nazareth,8.4708,124.6483
+614,Cagayan de Oro,Pagalungan,8.4061,124.5611
+615,Cagayan de Oro,Pagatpat,8.4505,124.5833
+616,Cagayan de Oro,Patag,8.4886,124.622
+617,Cagayan de Oro,Pigsag-an,8.3386,124.5141
+618,Cagayan de Oro,Puerto,8.4678,124.794
+619,Cagayan de Oro,Puntod,8.4956,124.6566
+620,Cagayan de Oro,San Simon,8.4356,124.5695
+621,Cagayan de Oro,Tablon,8.4788,124.7235
+622,Cagayan de Oro,Taglimao,8.4083,124.6031
+623,Cagayan de Oro,Tagpangi,8.3569,124.5639
+624,Cagayan de Oro,Tignapoloan,8.2741,124.5778
+625,Cagayan de Oro,Tuburan,8.3695,124.5113
+626,Cagayan de Oro,Tumpagon,8.3269,124.467

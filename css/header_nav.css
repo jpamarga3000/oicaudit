@@ -1,0 +1,192 @@
+/* header_nav.css - Dedicated styles for the main top navigation bar */
+
+/* Main Header Container */
+#main-header {
+    display: flex;
+    justify-content: space-between; /* Push left and right sections to opposite ends */
+    align-items: center;
+    padding: 0.75rem 1.5rem; /* Standard padding for the header */
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    position: sticky; /* Keep it sticky at the top */
+    top: 0;
+    z-index: 100;
+    overflow: visible; /* Ensure dropdowns are not clipped */
+    height: 60px; /* Fixed height for consistent appearance */
+    box-sizing: border-box; /* Include padding in height/width calculation */
+}
+
+/* Hide the horizontal navigation menu (centered-nav-items) completely */
+#main-header .centered-nav-items {
+    display: none;
+}
+
+/* Hamburger Menu Icon - Always visible, positioned within the left flex group */
+.hamburger-menu-icon {
+    display: block !important; /* Override any other display rules */
+    font-size: 1.8rem; /* Size of the icon */
+    cursor: pointer;
+    padding: 0.5rem; /* Padding around the icon for clickability */
+    color: #475569; /* Icon color */
+    background: transparent;
+    border: none;
+    z-index: 30; /* Ensure it's above other header elements */
+    /* No absolute positioning here, it's now part of the flex flow */
+}
+
+/* Mobile Navigation Menu - Now the primary overlay navigation */
+.mobile-nav-menu {
+    display: flex; /* Use flex to lay out menu items vertically */
+    flex-direction: column;
+    position: fixed; /* Overlay the entire viewport */
+    top: 60px; /* Positioned below the main header */
+    right: 0; /* Positioned to the right */
+    width: 250px; /* Assuming this is the desired fixed width for the menu */
+    height: calc(100% - 60px); /* Adjust height to fill space below header */
+    background-color: rgba(255, 255, 255, 0.9); /* White glass effect */
+    z-index: 999; /* High z-index to be on top of everything */
+    opacity: 0; /* Initially invisible */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.3s ease-out, visibility 0.3s ease-out; /* Smooth transition for fading */
+    padding: 0;
+    overflow-y: auto;
+    box-sizing: border-box;
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.08);
+    /* Ensure children stretch across the full width of the flex container */
+    align-items: stretch; /* Stretch items to fill the container width */
+    pointer-events: none; /* Disable pointer events when menu is hidden */
+}
+
+/* State when the mobile menu is active/open */
+.mobile-nav-menu.active {
+    opacity: 1; /* Slide into view */
+    visibility: visible;
+    pointer-events: auto; /* Enable pointer events when menu is active */
+}
+
+/* Close button inside the mobile menu */
+/*
+.close-mobile-menu {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    color: #1e293b;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+*/
+
+/* Styles for menu items within the mobile nav */
+.mobile-nav-menu .tab-item,
+.mobile-nav-menu .nested-tab-item {
+    width: 100%; /* Ensure full width of the menu */
+    margin-bottom: 0.5rem;
+    /* Removed text-align: center; as it might visually shrink the content */
+}
+
+.mobile-nav-menu .tab-button,
+.mobile-nav-menu .nested-tab-button,
+.mobile-nav-menu .submenu-item {
+    display: flex; /* Changed to flex to control icon/text alignment better */
+    align-items: center; /* Vertically align icon and text */
+    justify-content: flex-start; /* Aligns content to the left */
+    width: 100%; /* Explicitly set to 100% to ensure they fill the parent */
+    color: #1e293b;
+    text-decoration: none;
+    border-radius: 0;
+    transition: background-color 0.2s;
+    font-weight: 500;
+    background-color: transparent; /* Keep transparent, hover/active will apply background */
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+/* Main page buttons (e.g., Audit Tool, Accounting) */
+.mobile-nav-menu .tab-button {
+    padding: 1rem 1rem; /* 1rem padding on left and right */
+    font-size: 1.1rem; /* Base font size for main tabs */
+}
+
+/* Sub-page buttons (e.g., Aging Consolidated, General Ledger) - second level */
+.mobile-nav-menu .submenu-item {
+    padding: 1rem 2.5rem; /* Indented by 1.5rem from main tab (1rem + 1.5rem) */
+    font-size: 1rem; /* Slightly smaller than main tabs */
+}
+
+/* Nested tab buttons (e.g., TRNM, GL Processing) - second level, acts as a button for third level */
+.mobile-nav-menu .nested-tab-item .nested-tab-button {
+    padding: 1rem 2.5rem; /* Same indentation as other second-level items */
+    font-size: 1rem; /* Consistent font size for second-level buttons */
+}
+
+/* Items within nested submenus (e.g., DOS Combine CSV, DOS DBF to CSV) - third level */
+.mobile-nav-menu .nested-submenu-container .submenu-item {
+    padding: 1rem 4rem; /* Indented by another 1.5rem (2.5rem + 1.5rem) */
+    font-size: 0.9rem; /* Reduced font size by 0.1rem from second level */
+}
+
+
+/* Apply background to the tab-item itself for full width highlight */
+.mobile-nav-menu .tab-item .tab-button.active,
+.mobile-nav-menu .nested-tab-item .nested-tab-button.active {
+    background-color: rgba(0,0,0,0.1); /* Highlight active parent */
+}
+
+.mobile-nav-menu .tab-item:hover .tab-button,
+.mobile-nav-menu .nested-tab-item:hover .nested-tab-button,
+.mobile-nav-menu .submenu-item:hover {
+    background-color: rgba(0,0,0,0.05); /* Lighter hover effect */
+}
+
+/* Ensure icons have consistent spacing */
+.mobile-nav-menu .tab-button i,
+.mobile-nav-menu .nested-tab-button i,
+.mobile-nav-menu .submenu-item i { /* Added submenu-item to this rule */
+    margin-right: 0.75rem; /* Space between icon and text */
+}
+
+
+/* Submenu containers within the mobile nav */
+.mobile-nav-menu .submenu-container,
+.mobile-nav-menu .nested-submenu-container {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    transition: none;
+    pointer-events: auto;
+}
+
+.mobile-nav-menu .submenu-container.active,
+.mobile-nav-menu .nested-submenu-container.active {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles for the new profile picture in the header */
+.header-profile-pic {
+    width: 32px; /* Small size for header */
+    height: 32px;
+    border-radius: 50%; /* Circular border */
+    object-fit: cover; /* Ensure image covers the area */
+    margin-right: 0.5rem; /* Space between pic and greeting */
+    border: 2px solid #cbd5e1; /* Subtle border */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Main content area padding to clear the header */
+.main-content-area {
+    padding-top: 0rem; /* Removed the 5rem padding to eliminate the big gap */
+    flex-grow: 1;
+    width: 100%;
+}

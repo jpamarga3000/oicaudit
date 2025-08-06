@@ -1,0 +1,332 @@
+/* audit_tool/css/actg.css */
+
+/* --- General Layout & Card Styles (Retained) --- */
+#actgGl .dashboard-card {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    /* Ensure no overflow hidden that would clip the datalist */
+    overflow: visible; /* Changed from potential 'hidden' */
+    position: relative; /* Establish a stacking context for children if needed */
+}
+
+/* Flex container for input groups - Ensure it doesn't clip vertically */
+.flex.flex-nowrap.items-end.gap-4.overflow-x-auto.pb-4 {
+    /* overflow-x-auto is fine, but ensure no implicit vertical clipping */
+    overflow-y: visible; /* Ensure vertical overflow is visible */
+    /* If this element has a fixed height, consider removing it or making it dynamic */
+    /* Add a high z-index to ensure the input area is above other general content */
+    position: relative;
+    z-index: 100; /* Ensure this section is above potential report content */
+}
+
+/* --- Input Group Specific Styles --- */
+.input-group {
+    position: relative; /* Very important for datalist positioning */
+    /* Ensure the input group itself is above other elements if datalists are inside */
+    z-index: 20; /* Keep this value, it's good for placing input groups above general content */
+}
+
+/* NEW: Enhance z-index of the input group for GL Name/Code to ensure datalist visibility */
+/* Using :has() is a modern CSS pseudo-class; ensure browser compatibility if necessary.
+   If :has() isn't supported, apply these styles directly to all .input-group or a specific class. */
+.input-group:has(#actgGlGlName),
+.input-group:has(#actgGlGlCode) {
+    z-index: 200; /* Increased for priority, ensuring it's above .input-group's default 20 */
+}
+
+/* Apply position relative to the input field itself if datalist is a direct sibling */
+input[list] {
+    position: relative; /* Helps establish a stacking context if datalist uses absolute positioning relative to input */
+    z-index: 1; /* Keep input slightly above other elements in its own stacking context */
+}
+
+/* --- Datalist Visibility and Styling --- */
+datalist {
+    /* Force display and visibility */
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    /* Positioning and layering to ensure it appears above other content */
+    position: absolute; /* Position relative to the nearest positioned ancestor (input-group or input) */
+    top: 100%; /* Position directly below the input field */
+    left: 0;
+    width: 100%; /* Make it span the width of the input */
+    z-index: 99999 !important; /* Extremely high z-index to always be on top */
+
+    /* Basic styling for appearance */
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-height: 0px;
+    overflow-y: auto;
+    min-width: 250px; /* Ensure a minimum width */
+    padding: 0; /* Remove default padding to allow option padding to control spacing */
+}
+
+/* Individual option elements within the datalist */
+datalist option {
+    display: block !important; /* Ensure options are displayed as blocks */
+    visibility: visible !important;
+    opacity: 1 !important;
+    padding: 10px 15px; /* Padding for readability */
+    cursor: pointer;
+    color: #334155;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #f0f4f8; /* Separator between options */
+}
+
+/* Remove bottom border for the last option */
+datalist option:last-child {
+    border-bottom: none;
+}
+
+/* Hover effect for options */
+datalist option:hover {
+    background-color: #e2e8f0;
+    color: #1e293b;
+}
+
+
+/* --- Report Container and Action Bar Styles (Retained and slightly adjusted) --- */
+#actgGlReportActions {
+    position: sticky;
+    top: 0;
+    background-color: #f8fafc;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    z-index: 10; /* Ensure it stays on top of scrolling table content, but below input groups */
+    margin-bottom: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#actgGlReportContainer {
+    max-height: 60vh;
+    overflow-y: auto;
+    position: relative;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 5; /* Ensure this is below the input groups and actions */
+}
+
+#glReportTableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    display: table !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+#glReportTableContainer th,
+#glReportTableContainer td {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+#glReportTableContainer th.text-right,
+#glReportTableContainer td.text-right {
+    text-align: right;
+}
+
+#glReportTableContainer thead {
+    position: sticky;
+    top: 60px;
+    z-index: 2;
+    background-color: #f8fafc;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+#glReportTableContainer tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#glReportTableContainer tbody tr:hover {
+    background-color: #f0f4f8;
+    color: #334155;
+}
+
+#glReportTableContainer p.text-gray-500 {
+    padding: 2rem;
+    background-color: #f8fafc;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Styles for TB Report table headers */
+#actgTbReportContainer th {
+    text-align: center;
+}
+
+/* Styles for Reference and Description Report table headers */
+#actgRefReportContainer th,
+#actgDescReportContainer th {
+    text-align: center;
+}
+
+/* NEW: Styles for the Financial Statement Table */
+.financial-statement-table-container {
+    overflow-x: auto; /* Enable horizontal scrolling if content is too wide */
+    margin-top: 1.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.financial-statement-table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Remove background-color here, let rows define it */
+}
+
+.financial-statement-table th,
+.financial-statement-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: top; /* Align content to the top within cells */
+}
+
+.financial-statement-table thead th {
+    background-color: #f8fafc;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-bottom: 2px solid #cbd5e1;
+}
+
+.financial-statement-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Category Headers (CURRENT ASSETS, NON-CURRENT ASSETS, etc.) */
+.financial-statement-table .category-header {
+    font-weight: 600;
+    padding-top: 1.2rem;
+    padding-bottom: 0.6rem;
+    background-color: #f0f4f8; /* Slightly different background for headers */
+    border-bottom: 1px solid #cbd5e1;
+}
+
+/* Individual item labels */
+.financial-statement-table .item-label {
+    font-size: 0.95rem;
+    color: #334155;
+}
+
+/* Individual item values */
+.financial-statement-table .item-value {
+    font-size: 0.95rem;
+    color: #1e293b;
+    font-weight: 500;
+    text-align: right;
+    white-space: nowrap; /* Prevent values from wrapping */
+}
+
+/* Total items (e.g., TOTAL CURRENT ASSETS) */
+.financial-statement-table .total-item {
+    font-weight: 700;
+    background-color: #f8fafc;
+    border-top: 1px solid #cbd5e1;
+}
+
+/* Grand total row (TOTAL ASSETS and TOTAL LIABILITIES AND MEMBERS' EQUITY) */
+.financial-statement-table tfoot .grand-total-row {
+    background-color: #e2e8f0; /* Distinct background for grand totals */
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1e293b;
+    border-top: 2px solid #94a3b8; /* Thicker top border */
+}
+
+.financial-statement-table tfoot .grand-total-row td {
+    padding: 1rem;
+    border-bottom: none; /* No border at the bottom of the footer row */
+}
+
+/* Ensure asset and liab/equity columns have consistent width for visual balance */
+.financial-statement-table td:nth-child(1), /* Asset Account Name */
+.financial-statement-table th:nth-child(1) {
+    width: 25%; /* Roughly 25% for label */
+}
+
+.financial-statement-table td:nth-child(2), /* Asset Balance */
+.financial-statement-table th:nth-child(2) {
+    width: calc(20% - 20px); /* Adjusted for new spacer column, and to maintain overall width */
+    text-align: right;
+}
+
+/* New: Spacer column styling */
+.financial-statement-table .spacer-column-header {
+    width: 20px; /* MODIFIED: Width set to 20px */
+    background-color: transparent; /* Ensure it's transparent */
+    border-bottom: 2px solid #cbd5e1; /* Match header border */
+}
+
+.financial-statement-table .spacer-column {
+    width: 20px; /* MODIFIED: Width set to 20px */
+    background-color: transparent; /* Ensure it's transparent */
+    border-bottom: 1px solid #e2e8f0; /* Match row border */
+}
+
+
+.financial-statement-table td:nth-child(4), /* Liab/Equity Account Name (now 4th column) */
+.financial-statement-table th:nth-child(4) {
+    width: 15%; /* Roughly 25% for label */
+    /* Removed padding-left here as the spacer column handles separation */
+}
+
+.financial-statement-table td:nth-child(5), /* Liab/Equity Balance (now 5th column) */
+.financial-statement-table th:nth-child(5) {
+    width: calc(20% - 20px); /* Adjusted for new spacer column, and to maintain overall width */
+    text-align: right;
+}
+
+
+/* Specific styling for total rows to ensure text alignment for grand totals */
+.financial-statement-table .grand-total-row .item-label,
+.financial-statement-table .grand-total-row .item-value {
+    font-size: 1.1rem; /* Slightly larger font for grand totals */
+}
+
+/* REMOVED: Trend Modal Styles */
+/* The #trendModal, #closeModal, #modalTitle, #modalDateRange, .chart-container (modal specific)
+   styles are removed from here as the functionality is now in-table. */
+
+/* Keyframe animation for modal (removed as modal is removed) */
+/* @keyframes fadeInScale { ... } */
+
+/* NEW: Styles for the in-table trend row */
+.trend-row {
+    background-color: #f8fafc; /* Light background for the trend row */
+    transition: all 0.3s ease-in-out; /* Smooth transition for appearance */
+}
+.trend-chart-container {
+    position: relative;
+    height: 250px; /* Adjust height as needed for the chart */
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff; /* White background for the chart area */
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05); /* Subtle inner shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.trend-chart-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.sub-account-label-indent {
+    padding-left: 40px; /* Increase this value to move it further right */
+    /* Or use margin-left, depending on your layout preferences */
+    /* margin-left: 20px; */
+}

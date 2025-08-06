@@ -1,0 +1,403 @@
+/* audit_tool/css/home.css */
+
+/* General Body and Container Styles */
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #ffffff; /* Changed to purely white */
+    margin: 0;
+    padding: 0;
+}
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradient background */
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    /* Removed animation from here directly */
+}
+
+.hero-title {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+    animation: slideInFromTop 0.8s ease-out;
+}
+
+.hero-subtitle {
+    font-size: 1.5em;
+    font-weight: 300;
+    opacity: 0.9;
+    animation: slideInFromBottom 0.8s ease-out 0.2s;
+}
+
+/* Info Sections (About and Mission) */
+.info-section {
+    background-color: #ffffff; /* Changed to purely white */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start; /* Align items to start for multi-column layouts */
+    gap: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Removed animation properties here. They will be handled by .scroll-reveal and .is-visible classes */
+}
+
+.info-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Scroll-triggered reveal animation */
+.scroll-reveal {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Start from 50px below its final position */
+    transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth ease-out transition */
+}
+
+.scroll-reveal.is-visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+}
+
+
+.info-section.about-section {
+    flex-direction: row; /* Image on left, text on right */
+}
+
+/* Info Image */
+.info-image {
+    flex: 1; /* Takes less space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-image img.responsive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-image img.responsive-image:hover {
+    transform: scale(1.02);
+}
+
+/* Placeholder for removed image (This rule is kept for safety but should not be active) */
+.info-image-placeholder {
+    display: none; /* Hide this placeholder */
+}
+
+.info-content {
+    flex: 2; /* Takes more space */
+}
+
+.section-title {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #4a4a4a;
+    margin-bottom: 0; /* Changed from 20px to 0 */
+    border-bottom: 3px solid #667eea; /* Accent color */
+    padding-bottom: 10px;
+    display: inline-block; /* To make border-bottom only as wide as text */
+}
+
+.section-paragraph {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Organizational Structure Section Specific Styles (for the image) */
+.org-structure-section {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally within the section */
+    text-align: center;
+    padding: 40px 20px; /* Adjust padding for visual balance */
+}
+
+.org-chart-image-container {
+    width: 100%; /* Set width to 100% */
+    max-width: 100%; /* Ensure max-width is 100% */
+    margin: 0; /* Remove all margins */
+    padding: 0; /* Remove padding */
+    border: none; /* Remove border */
+    border-radius: 0; /* Remove border-radius */
+    overflow: hidden;
+    box-shadow: none; /* Remove shadow */
+}
+
+.org-chart-image {
+    width: 100%; /* Ensure image fills its container */
+    height: auto;
+    display: block; /* Remove extra space below image */
+    margin: 0; /* Remove any default image margins */
+    padding: 0; /* Remove any default image padding */
+}
+
+/* Audit Committee Section Styles */
+.audit-committee-section {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.committee-members-container {
+    display: flex;
+    justify-content: center; /* Center members horizontally */
+    flex-wrap: wrap; /* Allow members to wrap to the next line on smaller screens */
+    gap: 40px; /* Space between members */
+    margin: 0 auto; /* Zero horizontal margins and center the container */
+    width: 100%; /* Ensure it takes full available width */
+    max-width: 100%; /* Ensure it doesn't exceed 100% width of its parent */
+    padding-top: 0; /* Changed from 30px to 0 */
+}
+
+.committee-member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* Changed to purely white */
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 280px; /* Allow cards to grow, shrink, and have a base width */
+    max-width: 300px; /* Max width for individual cards */
+    min-height: 250px; /* Added min-height to ensure consistent card size */
+    justify-content: center; /* Align content to center vertically */
+    padding: 15px; /* Re-added padding to the card for internal spacing */
+}
+
+.committee-member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.member-image {
+    /* Changed from fixed width/height to responsive, and removed circular styling */
+    width: 100%; /* Make the image take full width of its container (now with padding) */
+    /* Removed max-width to allow it to span fully within the card's padding */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+    border-radius: 8px; /* Apply a small border-radius for rounded corners on the square */
+    object-fit: cover; /* Ensures the image covers the area, cropping if necessary */
+    aspect-ratio: 1 / 1; /* Forces the image container to be square */
+    border: none; /* Removed the colored border */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 10px; /* Add margin-bottom to separate from text */
+    transition: border-color 0.3s ease;
+}
+
+/* Removed the empty ruleset as per diagnostic message */
+/* .committee-member-card:hover .member-image {
+} */
+
+.member-name {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px; /* Adjusted margin-bottom */
+    margin-top: 0; /* Removed top margin, relies on image margin-bottom */
+}
+
+.member-designation {
+    font-size: 0.95em;
+    color: #666;
+    margin-top: 0; /* Removed top margin, relies on name margin-bottom */
+}
+
+/* NEW: Styles for "Meet the Audit Team" section */
+.audit-team-section {
+    flex-direction: column; /* Ensure main section stacks its children vertically */
+    align-items: center; /* Center content within the section */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.audit-team-section .section-title.full-width-title {
+    width: 100%; /* Ensure the main title takes full width */
+    text-align: center;
+    margin-bottom: 30px; /* Space below the main title */
+}
+
+.audit-team-section .team-role-title {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #4a4a4a;
+    margin-top: 0; /* Adjusted for horizontal layout */
+    margin-bottom: 15px; /* Space below the title */
+    border-bottom: none; /* Removed border-bottom */
+    padding-bottom: 0; /* Removed padding-bottom */
+    display: block; /* Make it a block element to take full available width */
+    white-space: normal; /* Allow title to wrap if needed */
+}
+
+.team-roles-horizontal-container {
+    display: flex;
+    justify-content: center; /* Center the role groups */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 40px; /* Space between role groups */
+    width: 100%; /* Ensure it takes full width */
+    margin-bottom: 30px; /* Space below this container */
+}
+
+.team-role-group {
+    display: flex;
+    flex-direction: column; /* Stack title and members vertically within the group */
+    align-items: center; /* Center content within the group */
+    text-align: center;
+    flex: 1; /* Allow groups to take equal space */
+    min-width: 250px; /* Minimum width for each role group */
+}
+
+.audit-team-section .team-members-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 0; /* Removed bottom margin from here as it's now on team-roles-horizontal-container */
+}
+
+/* Specific styling for Internal Auditors to display 3 per row */
+.audit-team-section .internal-auditors-grid {
+    /* This container specifically handles the grid for auditors */
+    width: 100%; /* Ensure it takes full width */
+    justify-content: center; /* Center the grid items */
+    gap: 40px; /* Consistent gap */
+    margin-top: 30px; /* Added margin-top to separate from the horizontal roles section */
+}
+
+.audit-team-section .internal-auditors-grid .committee-member-card {
+    /* Calculate width for 3 items per row with gaps */
+    flex: 1 1 calc((100% - 80px) / 3); /* 80px is 2 * gap (40px) */
+    max-width: calc((100% - 80px) / 3); /* Max width to ensure 3 per row */
+}
+
+/* Adjust for smaller screens where 2 or 1 per row might be needed */
+@media (max-width: 900px) {
+    .audit-team-section .internal-auditors-grid .committee-member-card {
+        flex: 1 1 calc((100% - 20px) / 2); /* 2 items per row with 20px gap */
+        max-width: calc((100% - 20px) / 2);
+    }
+}
+
+@media (max-width: 768px) {
+    .team-roles-horizontal-container {
+        flex-direction: column; /* Stack role groups vertically on small screens */
+        gap: 20px; /* Adjust gap */
+    }
+
+    .audit-team-section .internal-auditors-grid .committee-member-card {
+        flex: 1 1 100%; /* 1 item per row on very small screens */
+        max-width: 300px; /* Retain max-width for card itself */
+    }
+}
+
+
+/* Reusing .committee-member-card and .member-image for team members */
+/* If specific styling is needed for team members different from committee,
+   create new classes like .team-member-card, .team-member-image etc. */
+
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInFromTop {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInFromBottom {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .committee-members-container,
+    .audit-team-section .team-members-container { /* Apply to new container too */
+        gap: 20px; /* Reduce gap on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5em;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2em;
+    }
+
+    .info-section {
+        flex-direction: column !important; /* Stack content on small screens */
+        text-align: center;
+    }
+
+    .info-image {
+        margin-top: 20px;
+        width: 100%; /* Ensure image takes full width on small screens */
+        max-width: 300px; /* Limit max size for image */
+    }
+
+    .section-title {
+        font-size: 2em;
+        display: block; /* Allow border to span full width if needed */
+        width: fit-content; /* Adjust to content width */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .committee-member-card {
+        flex-basis: 100%; /* Stack cards vertically on very small screens */
+        max-width: 300px; /* Keep max width to avoid stretching too wide */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 50px 15px;
+    }
+
+    .hero-title {
+        font-size: 2em;
+    }
+
+    .hero-subtitle {
+        font-size: 1em;
+    }
+
+    .info-section {
+        padding: 25px;
+    }
+
+    .section-title {
+        font-size: 1.8em;
+    }
+
+    .section-paragraph {
+        font-size: 0.95em;
+    }
+}

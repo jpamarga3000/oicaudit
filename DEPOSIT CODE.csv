@@ -1,0 +1,326 @@
+BRANCH,TYPE,GL CODE,PRODUCT
+AGLAYAN,1,xx,Time Deposit -A
+AGLAYAN,2,xx,Time Deposit -B
+AGLAYAN,4,xx,Time Deposit -C
+AGLAYAN,5,xx,Health and Disaster
+AGLAYAN,6,xx,PEARLS - Retirement
+AGLAYAN,7,xx,PEARLS - Pension
+AGLAYAN,8,xx,Build Savings Fund
+AGLAYAN,9,xx,Emergency Fund
+AGLAYAN,10,xx,Share Capital
+AGLAYAN,11,xx,Regular Savings
+AGLAYAN,12,xx,Youth Savings Club
+AGLAYAN,13,xx,Transit Savings
+AGLAYAN,14,10,Dream Savings
+AGLAYAN,14,11,SAFE
+AGLAYAN,15,xx,Compulsory Savings Deposit
+AGLAYAN,15,xx,Member Contigency Savings
+AGLAYAN,17,xx,SAFE
+AGLAYAN,18,xx,Pocket Savings
+AGLAYAN,19,xx,SAFE Plus
+AGLAYAN,20,xx,ATM Savings
+AGLAYAN,25,xx,Kabayani Savings
+AGLAYAN,31,xx,Time Deposit - Monthly
+AGLAYAN,32,xx,Time Deposit - Maturity
+AGORA,1,xx,Time Deposit -A
+AGORA,2,xx,Time Deposit -B
+AGORA,3,xx,Kabayani Savings
+AGORA,4,xx,Time Deposit -C
+AGORA,5,xx,Health and Disaster
+AGORA,6,xx,PEARLS - Retirement
+AGORA,7,xx,PEARLS - Pension
+AGORA,8,xx,Build Savings Fund
+AGORA,9,xx,Emergency Fund
+AGORA,10,xx,Share Capital
+AGORA,11,xx,Regular Savings
+AGORA,12,xx,Youth Savings Club
+AGORA,13,xx,Transit Savings
+AGORA,14,xx,Dream Savings
+AGORA,15,xx,Compulsory Savings Deposit
+AGORA,17,xx,SAFE
+AGORA,18,xx,Pocket Savings
+AGORA,19,xx,SAFE Plus
+AGORA,31,xx,Time Deposit - Monthly
+AGORA,32,xx,Time Deposit - Maturity
+BAUNGON,1,xx,Time Deposit -A
+BAUNGON,2,xx,Time Deposit -B
+BAUNGON,4,xx,Time Deposit -C
+BAUNGON,5,xx,Health and Disaster
+BAUNGON,6,xx,PEARLS - Retirement
+BAUNGON,7,xx,PEARLS - Pension
+BAUNGON,9,xx,Emergency Fund
+BAUNGON,10,xx,Share Capital
+BAUNGON,11,xx,Regular Savings
+BAUNGON,12,xx,Youth Savings Club
+BAUNGON,13,xx,Transit Savings
+BAUNGON,14,10,Dream Savings
+BAUNGON,14,11,SAFE
+BAUNGON,15,xx,Compulsory Savings Deposit
+BAUNGON,15,xx,Member Contigency Savings
+BAUNGON,18,xx,Pocket Savings
+BAUNGON,19,xx,SAFE Plus
+BAUNGON,20,xx,ATM Savings
+BAUNGON,25,xx,Kabayani Savings
+BAUNGON,32,xx,Time Deposit - Maturity
+BULUA,1,xx,Time Deposit -A
+BULUA,4,xx,Time Deposit -C
+BULUA,5,xx,Health and Disaster
+BULUA,6,xx,PEARLS - Retirement
+BULUA,7,xx,PEARLS - Pension
+BULUA,9,xx,Emergency Fund
+BULUA,10,xx,Share Capital
+BULUA,11,xx,Regular Savings
+BULUA,12,xx,Youth Savings Club
+BULUA,13,xx,Transit Savings
+BULUA,14,xx,Dream Savings
+BULUA,15,xx,Compulsory Savings Deposit
+BULUA,16,xx,Kabayani Savings
+BULUA,17,xx,SAFE
+BULUA,18,xx,Pocket Savings
+BULUA,19,xx,SAFE Plus
+BULUA,31,xx,Time Deposit - Monthly
+BULUA,33,xx,Time Deposit - Maturity
+BUTUAN,0,xx,Share Capital
+BUTUAN,1,xx,Time Deposit -A
+BUTUAN,4,xx,Time Deposit -C
+BUTUAN,5,xx,Health and Disaster
+BUTUAN,6,xx,PEARLS - Retirement
+BUTUAN,7,xx,PEARLS - Pension
+BUTUAN,8,xx,Build Savings Fund
+BUTUAN,11,xx,Regular Savings
+BUTUAN,12,xx,Youth Savings Club
+BUTUAN,13,xx,Transit Savings
+BUTUAN,14,xx,Dream Savings
+BUTUAN,15,xx,Compulsory Savings Deposit
+BUTUAN,17,xx,SAFE
+BUTUAN,18,xx,Pocket Savings
+BUTUAN,24,xx,SAFE Plus
+BUTUAN,25,xx,Kabayani Savings
+BUTUAN,31,xx,Time Deposit - Monthly
+CARMEN,1,xx,Time Deposit -A
+CARMEN,4,xx,Time Deposit -C
+CARMEN,5,xx,Health and Disaster
+CARMEN,6,xx,PEARLS - Retirement
+CARMEN,7,xx,PEARLS - Pension
+CARMEN,8,xx,Build Savings Fund
+CARMEN,9,xx,Emergency Fund
+CARMEN,10,xx,Share Capital
+CARMEN,11,xx,Regular Savings
+CARMEN,12,xx,Youth Savings Club
+CARMEN,13,xx,Transit Savings
+CARMEN,14,10,Dream Savings
+CARMEN,14,11,SAFE
+CARMEN,15,xx,Compulsory Savings Deposit
+CARMEN,16,xx,Home Savings
+CARMEN,18,xx,Pocket Savings
+CARMEN,19,xx,SAFE Plus
+CARMEN,25,xx,Kabayani Savings
+CARMEN,31,xx,Time Deposit - Monthly
+CARMEN,32,xx,Time Deposit - Maturity
+DON CARLOS,0,xx,Share Capital
+DON CARLOS,1,xx,Time Deposit -A
+DON CARLOS,4,xx,Time Deposit -C
+DON CARLOS,5,xx,Health and Disaster
+DON CARLOS,6,xx,PEARLS - Retirement
+DON CARLOS,7,xx,PEARLS - Pension
+DON CARLOS,8,xx,Build Savings Fund
+DON CARLOS,11,xx,Regular Savings
+DON CARLOS,12,xx,Youth Savings Club
+DON CARLOS,13,xx,Transit Savings
+DON CARLOS,14,xx,Dream Savings
+DON CARLOS,15,xx,Compulsory Savings Deposit
+DON CARLOS,17,xx,SAFE
+DON CARLOS,18,xx,Pocket Savings
+DON CARLOS,19,xx,SAFE Plus
+DON CARLOS,25,xx,Kabayani Savings
+DON CARLOS,31,xx,Time Deposit - Monthly
+DON CARLOS,32,xx,Time Deposit - Maturity
+EL SALVADOR,1,xx,Time Deposit -A
+EL SALVADOR,4,xx,Time Deposit -C
+EL SALVADOR,5,xx,Health and Disaster
+EL SALVADOR,6,xx,PEARLS - Retirement
+EL SALVADOR,7,xx,PEARLS - Pension
+EL SALVADOR,8,xx,Build Savings Fund
+EL SALVADOR,9,xx,Emergency Fund
+EL SALVADOR,10,xx,Share Capital
+EL SALVADOR,11,xx,Regular Savings
+EL SALVADOR,12,xx,Youth Savings Club
+EL SALVADOR,13,xx,Transit Savings
+EL SALVADOR,14,10,Dream Savings
+EL SALVADOR,14,11,SAFE
+EL SALVADOR,15,xx,Compulsory Savings Deposit
+EL SALVADOR,18,xx,Pocket Savings
+EL SALVADOR,20,xx,ATM Savings
+EL SALVADOR,22,xx,SAFE Plus
+EL SALVADOR,25,xx,Kabayani Savings
+EL SALVADOR,31,xx,Time Deposit - Monthly
+EL SALVADOR,32,xx,Time Deposit - Maturity
+GINGOOG,1,xx,Time Deposit -A
+GINGOOG,4,xx,Time Deposit -C
+GINGOOG,5,xx,Health and Disaster
+GINGOOG,6,xx,PEARLS - Retirement
+GINGOOG,7,xx,PEARLS - Pension
+GINGOOG,8,xx,Build Savings Fund
+GINGOOG,10,xx,Share Capital
+GINGOOG,11,xx,Regular Savings
+GINGOOG,12,xx,Youth Savings Club
+GINGOOG,13,xx,Transit Savings
+GINGOOG,14,10,Dream Savings
+GINGOOG,14,11,SAFE
+GINGOOG,15,xx,Compulsory Savings Deposit
+GINGOOG,18,xx,Pocket Savings
+GINGOOG,19,xx,SAFE Plus
+GINGOOG,25,xx,Kabayani Savings
+GINGOOG,32,xx,Time Deposit - Maturity
+MANOLO,1,xx,Time Deposit -A
+MANOLO,4,xx,Time Deposit -C
+MANOLO,5,xx,Health and Disaster
+MANOLO,6,xx,PEARLS - Retirement
+MANOLO,7,xx,PEARLS - Pension
+MANOLO,8,xx,Build Savings Fund
+MANOLO,9,xx,Emergency Fund
+MANOLO,10,xx,Share Capital
+MANOLO,11,xx,Regular Savings
+MANOLO,12,xx,Youth Savings Club
+MANOLO,13,xx,Transit Savings
+MANOLO,14,10,Dream Savings
+MANOLO,14,11,SAFE
+MANOLO,15,xx,Compulsory Savings Deposit
+MANOLO,17,xx,SAFE
+MANOLO,19,xx,SAFE Plus
+MANOLO,20,xx,ATM Savings
+MANOLO,31,xx,Time Deposit - Monthly
+MANOLO,32,xx,Time Deposit - Maturity
+MARAMAG,0,xx,Share Capital
+MARAMAG,1,xx,Time Deposit -A
+MARAMAG,4,xx,Time Deposit -C
+MARAMAG,5,xx,Health and Disaster
+MARAMAG,6,xx,PEARLS - Retirement
+MARAMAG,7,xx,PEARLS - Pension
+MARAMAG,8,xx,Build Savings Fund
+MARAMAG,11,xx,Regular Savings
+MARAMAG,12,xx,Youth Savings Club
+MARAMAG,13,xx,Transit Savings
+MARAMAG,14,xx,Dream Savings
+MARAMAG,15,xx,Compulsory Savings Deposit
+MARAMAG,17,xx,SAFE
+MARAMAG,18,xx,Pocket Savings
+MARAMAG,19,xx,SAFE Plus
+MARAMAG,25,xx,Kabayani Savings
+MARAMAG,31,xx,Time Deposit - Monthly
+PUERTO,1,xx,Time Deposit -A
+PUERTO,4,xx,Time Deposit -C
+PUERTO,5,xx,Health and Disaster
+PUERTO,6,xx,PEARLS - Retirement
+PUERTO,7,xx,PEARLS - Pension
+PUERTO,8,xx,Build Savings Fund
+PUERTO,9,xx,Emergency Fund
+PUERTO,10,xx,Share Capital
+PUERTO,11,xx,Regular Savings
+PUERTO,12,xx,Youth Savings Club
+PUERTO,13,xx,Transit Savings
+PUERTO,14,10,Dream Savings
+PUERTO,14,11,SAFE
+PUERTO,15,xx,Compulsory Savings Deposit
+PUERTO,18,xx,Pocket Savings
+PUERTO,19,xx,SAFE Plus
+PUERTO,20,xx,ATM Savings
+PUERTO,25,xx,Kabayani Savings
+PUERTO,31,xx,Time Deposit - Monthly
+TAGBILARAN,1,xx,Time Deposit -A
+TAGBILARAN,4,xx,Time Deposit -C
+TAGBILARAN,5,xx,Health and Disaster
+TAGBILARAN,6,xx,PEARLS - Retirement
+TAGBILARAN,7,xx,PEARLS - Pension
+TAGBILARAN,8,xx,Build Savings Fund
+TAGBILARAN,10,xx,Share Capital
+TAGBILARAN,11,xx,Regular Savings
+TAGBILARAN,12,xx,Youth Savings Club
+TAGBILARAN,13,xx,Transit Savings
+TAGBILARAN,14,10,Dream Savings
+TAGBILARAN,14,11,SAFE
+TAGBILARAN,15,xx,Compulsory Savings Deposit
+TAGBILARAN,17,xx,SAFE Plus
+TAGBILARAN,18,xx,Pocket Savings
+TAGBILARAN,32,xx,Time Deposit - Maturity
+TALAKAG,1,xx,Time Deposit -A
+TALAKAG,2,xx,Time Deposit -B
+TALAKAG,4,xx,Time Deposit -C
+TALAKAG,5,xx,SAFE Plus
+TALAKAG,6,xx,PEARLS - Retirement
+TALAKAG,7,xx,PEARLS - Pension
+TALAKAG,8,xx,Health and Disaster
+TALAKAG,10,xx,Share Capital
+TALAKAG,11,xx,Regular Savings
+TALAKAG,12,xx,Youth Savings Club
+TALAKAG,13,xx,Transit Savings
+TALAKAG,14,10,Dream Savings
+TALAKAG,14,11,SAFE
+TALAKAG,15,xx,Compulsory Savings Deposit
+TALAKAG,17,xx,Emergency Fund
+TALAKAG,18,xx,Pocket Savings
+TALAKAG,20,xx,ATM Savings
+TALAKAG,21,xx,ATM Savings
+TALAKAG,32,xx,Time Deposit - Maturity
+UBAY,1,xx,Time Deposit -A
+UBAY,4,xx,Time Deposit -C
+UBAY,5,xx,Health and Disaster
+UBAY,6,xx,PEARLS - Retirement
+UBAY,7,xx,PEARLS - Pension
+UBAY,8,xx,Build Savings Fund
+UBAY,9,xx,Emergency Fund
+UBAY,10,xx,Share Capital
+UBAY,11,xx,Regular Savings
+UBAY,12,xx,Youth Savings Club
+UBAY,13,xx,Transit Savings
+UBAY,14,10,Dream Savings
+UBAY,14,11,SAFE
+UBAY,15,xx,Compulsory Savings Deposit
+UBAY,17,xx,SAFE Plus
+UBAY,18,xx,Pocket Savings
+UBAY,25,xx,Kabayani Savings
+UBAY,32,xx,Time Deposit - Maturity
+VALENCIA,0,xx,Share Capital
+VALENCIA,1,xx,Time Deposit -A
+VALENCIA,4,xx,Time Deposit -C
+VALENCIA,5,xx,Health and Disaster
+VALENCIA,6,xx,PEARLS - Retirement
+VALENCIA,7,xx,PEARLS - Pension
+VALENCIA,8,xx,Build Savings Fund
+VALENCIA,9,xx,Emergency Fund
+VALENCIA,11,xx,Regular Savings
+VALENCIA,12,xx,Youth Savings Club
+VALENCIA,13,xx,Transit Savings
+VALENCIA,14,xx,Dream Savings
+VALENCIA,15,xx,Compulsory Savings Deposit
+VALENCIA,17,xx,SAFE
+VALENCIA,18,xx,Pocket Savings
+VALENCIA,19,xx,Member Contigency Savings
+VALENCIA,20,xx,ATM Savings
+VALENCIA,24,xx,SAFE Plus
+VALENCIA,25,xx,Kabayani Savings
+VALENCIA,31,xx,Time Deposit - Monthly
+YACAPIN,1,xx,Time Deposit -A
+YACAPIN,2,xx,Time Deposit -B
+YACAPIN,4,xx,Time Deposit -C
+YACAPIN,5,xx,Health and Disaster
+YACAPIN,6,xx,PEARLS - Retirement
+YACAPIN,7,xx,PEARLS - Pension
+YACAPIN,8,xx,Build Savings Fund
+YACAPIN,9,xx,Emergency Fund
+YACAPIN,10,xx,Share Capital
+YACAPIN,11,xx,Regular Savings
+YACAPIN,12,xx,Youth Savings Club
+YACAPIN,13,xx,Transit Savings
+YACAPIN,14,5,Dream Savings
+YACAPIN,14,9,SAFE
+YACAPIN,15,xx,Compulsory Savings Deposit
+YACAPIN,16,xx,Home Savings
+YACAPIN,17,xx,Pocket Savings
+YACAPIN,18,xx,ATM Savings
+YACAPIN,20,xx,ATM Savings
+YACAPIN,21,xx,ATM Savings
+YACAPIN,23,xx,ATM Savings
+YACAPIN,24,xx,SAFE Plus
+YACAPIN,25,xx,Kabayani Savings
+YACAPIN,32,xx,Time Deposit - Maturity
